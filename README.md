@@ -1,7 +1,7 @@
 # HTML-CSS-Coursework-Submission
 
 Thomas: 
-Daniel: Nav & Footer - Någon undersida
+Daniel: Nav & Footer - Contact
 Simon:
 Per:
 Christopher:
