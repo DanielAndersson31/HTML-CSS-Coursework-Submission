@@ -1,7 +1,8 @@
+$border-radius: 0;
+
 .news {
     display: flex;
     gap: 2rem;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
 }
@@ -10,19 +11,34 @@
     .news {
         flex-direction: row;
     }
-}
-.card {
-    img {
-        border-radius: 0;
-        width: 400px;
-        height: 280px;
-    }
 
+}
+
+.card {
+    overflow: hidden;
     width: 25rem;
-    border-radius: 0;
+    height: auto;
+    border-radius: $border-radius;
     border: 0;
 }
 
-.card-body {
+.zoom {
+    img {
+        border-radius: $border-radius;
+        width: 400px;
+        height: 280px;
+        transition: 1s all ease-in-out;
+    }
 
+    img:hover {
+        transform: scale(1.1);
+    }
+
+    time {
+        font-size: 0.8rem;
+    }
+
+    width: 400px;
+    height: 280px;
+    overflow: hidden;
 }
