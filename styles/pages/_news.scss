@@ -19,7 +19,6 @@ $border-radius: 0;
     width: 25rem;
     height: auto;
     border-radius: $border-radius;
-    border: 0;
 }
 
 .zoom {
@@ -34,11 +33,16 @@ $border-radius: 0;
         transform: scale(1.1);
     }
 
-    time {
-        font-size: 0.8rem;
-    }
-
+    
     width: 400px;
     height: 280px;
     overflow: hidden;
+}
+
+.card-body {
+    time {
+        font-size: 0.8rem;
+    }  
+
+    color: black;
 }

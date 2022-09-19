@@ -96,7 +96,6 @@ h1 {
   width: 25rem;
   height: auto;
   border-radius: 0;
-  border: 0;
 }
 
 .zoom {
@@ -113,6 +112,10 @@ h1 {
 .zoom img:hover {
   transform: scale(1.1);
 }
-.zoom time {
+
+.card-body {
+  color: black;
+}
+.card-body time {
   font-size: 0.8rem;
 }/*# sourceMappingURL=main.css.map */
