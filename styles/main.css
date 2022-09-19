@@ -73,4 +73,24 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+h1 {
+  margin-top: 5rem;
+}
+
+.news {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media (min-width: 992px) {
+  .news {
+    flex-direction: row;
+  }
+}
+.card {
+  width: 25rem;
 }/*# sourceMappingURL=main.css.map */

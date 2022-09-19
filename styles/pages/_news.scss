@@ -1,0 +1,20 @@
+.news {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media (min-width: 992px) {
+    .news {
+        flex-direction: row;
+    }
+}
+.card {
+    width: 25rem;
+}
+
+.card-body {
+
+}
