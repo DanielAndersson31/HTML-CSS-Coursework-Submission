@@ -12,7 +12,15 @@
     }
 }
 .card {
+    img {
+        border-radius: 0;
+        width: 400px;
+        height: 280px;
+    }
+
     width: 25rem;
+    border-radius: 0;
+    border: 0;
 }
 
 .card-body {
