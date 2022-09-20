@@ -77,4 +77,8 @@ select {
 body {
   display: grid;
   grid-template-rows: auto 1fr auto;
+}
+
+.body-about p {
+  background-color: black;
 }/*# sourceMappingURL=main.css.map */
