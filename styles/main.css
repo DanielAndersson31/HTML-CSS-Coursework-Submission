@@ -1,3 +1,7 @@
+:root {
+  --color-test: rgb(255, 0, 0);
+}
+
 /* Box sizing rules */
 *,
 *::before,
