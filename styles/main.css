@@ -3,6 +3,7 @@
   --color-bg: #fff;
   --color-bg-alt: #afafaf;
   --color-text: #242424;
+  --color-text-light: #404040;
   --color-accent: #da7800;
   --color-accent-dark: #202731;
   --font-size-xs: 0.75rem;
@@ -120,8 +121,7 @@ a {
 
 a:hover,
 a:focus {
-  color: var(--color-text);
-  opacity: 0.7;
+  color: var(--color-text-light);
 }
 
 .text-small {
@@ -144,7 +144,7 @@ body {
 
 .news {
   display: flex;
-  gap: 2rem;
+  gap: 3rem;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -163,23 +163,20 @@ body {
 }
 
 .zoom {
-  width: 400px;
-  height: 280px;
+  width: 25rem;
+  height: 17rem;
   overflow: hidden;
 }
 .zoom img {
   border-radius: 0;
-  width: 400px;
-  height: 280px;
+  width: 25rem;
+  height: 17rem;
   transition: 1s all ease-in-out;
 }
 .zoom img:hover {
   transform: scale(1.1);
 }
 
-.card-body {
-  color: black;
-}
 .card-body time {
-  font-size: 0.8rem;
+  font-size: var(--font-size-xs);
 }/*# sourceMappingURL=main.css.map */
