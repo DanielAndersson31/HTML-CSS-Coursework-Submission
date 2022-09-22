@@ -145,10 +145,10 @@ body {
 .newsarticle {
   display: flex;
   flex-wrap: wrap;
+  padding: 0;
   gap: 2rem;
   justify-content: left;
   flex-direction: column;
-  border: 1px solid black;
 }
 
 @media (min-width: 62rem) {
@@ -161,6 +161,12 @@ body {
   width: 25rem;
   height: auto;
   border-radius: 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card time {
+  font-size: var(--font-size-xs);
+  padding: 0.5rem;
+  margin-left: 0.5rem;
 }
 
 .zoom {
@@ -176,8 +182,4 @@ body {
 }
 .zoom img:hover {
   transform: scale(1.1);
-}
-
-.card-body time {
-  font-size: var(--font-size-xs);
 }/*# sourceMappingURL=main.css.map */
