@@ -140,4 +140,46 @@ body {
 
 body {
   background-color: var(--color-test);
+}
+
+.news {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@media (min-width: 992px) {
+  .news {
+    flex-direction: row;
+  }
+}
+.card {
+  overflow: hidden;
+  width: 25rem;
+  height: auto;
+  border-radius: 0;
+}
+
+.zoom {
+  width: 400px;
+  height: 280px;
+  overflow: hidden;
+}
+.zoom img {
+  border-radius: 0;
+  width: 400px;
+  height: 280px;
+  transition: 1s all ease-in-out;
+}
+.zoom img:hover {
+  transform: scale(1.1);
+}
+
+.card-body {
+  color: black;
+}
+.card-body time {
+  font-size: 0.8rem;
 }/*# sourceMappingURL=main.css.map */
