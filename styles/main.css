@@ -140,4 +140,8 @@ body {
 
 body {
   background-color: var(--color-test);
+}
+
+.body-about p {
+  background-color: var(--color-bg-alt);
 }/*# sourceMappingURL=main.css.map */
