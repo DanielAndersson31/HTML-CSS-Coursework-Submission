@@ -1,18 +1,22 @@
 $border-radius: 0;
 
-.news {
-    display: flex;
-    gap: 3rem;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+.continer-news {
+    
 }
 
-@media (min-width: 992px) {
-    .news {
-        flex-direction: row;
-    }
+.newsarticle {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: left;
+    flex-direction: column;
+    border: 1px solid black;
+}
 
+@media (min-width: 62rem) {
+    .newsarticle {
+        flex-direction: row;
+    } 
 }
 
 .card {
@@ -29,12 +33,9 @@ $border-radius: 0;
         height: 17rem;
         transition: 1s all ease-in-out;
     }
-
     img:hover {
         transform: scale(1.1);
     }
-
-    
     width: 25rem;
     height: 17rem;
     overflow: hidden;

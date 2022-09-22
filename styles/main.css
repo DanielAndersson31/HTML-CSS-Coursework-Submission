@@ -142,16 +142,17 @@ body {
   background-color: var(--color-test);
 }
 
-.news {
+.newsarticle {
   display: flex;
-  gap: 3rem;
-  align-items: center;
-  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: left;
   flex-direction: column;
+  border: 1px solid black;
 }
 
-@media (min-width: 992px) {
-  .news {
+@media (min-width: 62rem) {
+  .newsarticle {
     flex-direction: row;
   }
 }
