@@ -43,6 +43,7 @@
   </header>
   <main class="container container-news">
     <h1>The Pipeline!</h1>
+
     <div class="container newsarticle">
       <div class="card shadow">
         <a href="">
@@ -80,23 +81,85 @@
         </a>
         <time datetime="2022-09-19">2022-09-19</time>
       </div>
-      <div class="card shadow">
-        <a href="">
-          <div class="zoom">
-            <img src="../assets/images/computer.jpg" class="card-img-top"
-              alt="Picture of a computer standing on a table in a low lighted room.">
+
+      <!--Load More Funktion ( Old articles )-->
+      <div class="collapse" id="collapseExample">
+        <div class="collaps-body">
+          <div class="card shadow">
+            <a href="">
+              <div class="zoom">
+                <img src="../assets/images/computer.jpg" class="card-img-top"
+                  alt="Picture of a computer standing on a table in a low lighted room.">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Test Funktion 4</h5>
+              </div>
+            </a>
+            <time datetime="2022-09-19">2022-09-19</time>
           </div>
-          <div class="card-body">
-            <h5 class="card-title">GBG/WEBDEV release!</h5>
+        </div>
+      </div>
+
+      <div class="collapse" id="collapseExample">
+        <div class="collaps-body">
+          <div class="card shadow">
+            <a href="">
+              <div class="zoom">
+                <img src="../assets/images/computer.jpg" class="card-img-top"
+                  alt="Picture of a computer standing on a table in a low lighted room.">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Testa funktion 3</h5>
+              </div>
+            </a>
+            <time datetime="2022-09-22">2022-09-22</time>
           </div>
-        </a>
-        <time datetime="2022-09-19">2022-09-19</time>
+        </div>
+      </div>
+
+      <div class="collapse" id="collapseExample">
+        <div class="collaps-body">
+          <div class="card shadow">
+            <a href="">
+              <div class="zoom">
+                <img src="../assets/images/computer.jpg" class="card-img-top"
+                  alt="Picture of a computer standing on a table in a low lighted room.">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Testa funktion 2</h5>
+              </div>
+            </a>
+            <time datetime="2022-09-22">2022-09-22</time>
+          </div>
+        </div>
+      </div>
+
+      <div class="collapse" id="collapseExample">
+        <div class="collaps-body">
+          <div class="card shadow">
+            <a href="">
+              <div class="zoom">
+                <img src="../assets/images/computer.jpg" class="card-img-top"
+                  alt="Picture of a computer standing on a table in a low lighted room.">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Testa funktion 1</h5>
+              </div>
+            </a>
+            <time datetime="2022-09-22">2022-09-22</time>
+          </div>
+        </div>
       </div>
     </div>
+
     <div class="btn-more">
-      <a class="btn col-3 p-4 btn-outline-primary" href="#" role="button">Link</a>
+      <button class="btn btn-primary collapsed" type="button" data-bs-toggle="collapse"
+        data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        Load more GBG/WEBDEV news!
+      </button>
     </div>
   </main>
+
   <footer class="bg-light">
     <div class="container">footer content</div>
   </footer>
