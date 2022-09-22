@@ -1,3 +1,21 @@
-body {
-  background-color: var(--color-test);
+.home-main {
+  .container {
+    padding-block: 4rem;
+  }
+  .hero {
+    background-color: antiquewhite;
+    padding-block: 8rem;
+    .col {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      button {
+        font-size: var(--font-size-m);
+        margin-left: auto;
+      }
+    }
+  }
+  .col > *:not(:last-child) {
+    padding-bottom: 1rem;
+  }
 }

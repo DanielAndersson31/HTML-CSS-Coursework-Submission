@@ -133,13 +133,44 @@ a:focus {
   font-weight: lighter;
 }
 
+.button-accent {
+  --transition-time: 250ms;
+  background-color: rgba(0, 0, 0, 0);
+  border: 3px solid var(--color-accent);
+  color: var(--color-accent);
+  padding: 0.75rem 3rem;
+  border-radius: 0.5em;
+  transition: background-color var(--transition-time) ease-in-out, color var(--transition-time) ease-in-out;
+}
+.button-accent:hover, .button-accent:focus {
+  background-color: var(--color-accent);
+  border: 3px solid var(--color-accent);
+  color: var(--color-bg);
+}
+
 body {
   display: grid;
   grid-template-rows: auto 1fr auto;
 }
 
-body {
-  background-color: var(--color-test);
+.home-main .container {
+  padding-block: 4rem;
+}
+.home-main .hero {
+  background-color: antiquewhite;
+  padding-block: 8rem;
+}
+.home-main .hero .col {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.home-main .hero .col button {
+  font-size: var(--font-size-m);
+  margin-left: auto;
+}
+.home-main .col > *:not(:last-child) {
+  padding-bottom: 1rem;
 }
 
 #windowgirl {

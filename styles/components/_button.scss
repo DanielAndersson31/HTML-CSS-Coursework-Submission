@@ -1,0 +1,20 @@
+// accent button with transparent background that fills in on hover
+.button-accent {
+  --transition-time: 250ms;
+
+  background-color: rgba(0, 0, 0, 0);
+  border: 3px solid var(--color-accent);
+  color: var(--color-accent);
+
+  padding: 0.75rem 3rem;
+  border-radius: 0.5em;
+
+  transition: background-color var(--transition-time) ease-in-out, color var(--transition-time) ease-in-out;
+
+  &:hover,
+  &:focus {
+    background-color: var(--color-accent);
+    border: 3px solid var(--color-accent);
+    color: var(--color-bg);
+  }
+}
