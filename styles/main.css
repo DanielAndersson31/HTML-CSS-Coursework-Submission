@@ -1,5 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,700;1,300&display=swap");
 :root {
-  --color-test: rgb(255, 0, 0);
+  --color-bg: #fff;
+  --color-bg-alt: #afafaf;
+  --color-text: #242424;
+  --color-accent: #da7800;
+  --color-accent-dark: #202731;
+  --font-size-xs: 0.75rem;
+  --font-size-s: 1rem;
+  --font-size-m: 2rem;
+  --font-size-l: 3rem;
+  --font-size-xl: 4rem;
 }
 
 /* Box sizing rules */
@@ -79,6 +89,55 @@ select {
   }
 }
 body {
+  font-family: "Work Sans", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: var(--font-size-xl);
+}
+
+h2 {
+  font-size: var(--font-size-l);
+}
+
+h3 {
+  font-size: var(--font-size-m);
+}
+
+p {
+  font-size: var(--font-size-s);
+}
+
+a {
+  color: var(--color-text);
+}
+
+a:hover,
+a:focus {
+  color: var(--color-text);
+  opacity: 0.7;
+}
+
+.text-small {
+  font-size: var(--font-size-xs);
+}
+
+.quote {
+  font-style: italic;
+  font-weight: lighter;
+}
+
+body {
   display: grid;
   grid-template-rows: auto 1fr auto;
+}
+
+body {
+  background-color: var(--color-test);
 }/*# sourceMappingURL=main.css.map */
