@@ -1,6 +1,31 @@
 $border-radius: 0;
 $article-width: 25rem;
 
+.container-news {
+
+    .container-img {
+        display: flex;
+        padding-left: 0;
+        padding-right: 0;
+        height: 20rem;  
+    }
+
+    img {
+        object-fit:cover ;
+        display: flex;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .spot-article {
+        display: flex;
+        padding: 1rem;
+        padding-left: 0;
+        padding-right: 0;
+        flex-direction: column;
+    }
+}
+
 .newsarticle {
     display: flex;
     flex-wrap: wrap;
