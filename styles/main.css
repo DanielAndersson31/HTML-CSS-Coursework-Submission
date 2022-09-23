@@ -13,6 +13,14 @@
   --font-size-xl: 4rem;
 }
 
+@media screen and (max-width: 500px) {
+  :root {
+    --multiplier: 0.8;
+    --font-size-m: calc(2rem * var(--multiplier));
+    --font-size-l: calc(3rem * var(--multiplier));
+    --font-size-xl: calc(4rem * var(--multiplier));
+  }
+}
 /* Box sizing rules */
 *,
 *::before,
