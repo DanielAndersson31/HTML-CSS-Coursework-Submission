@@ -186,7 +186,7 @@ body {
   transform: scale(1.1);
 }
 
-.btn-more {
+.btn-more, .btn-back {
   display: flex;
   justify-content: center;
   padding: 2rem;
