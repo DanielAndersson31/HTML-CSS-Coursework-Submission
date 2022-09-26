@@ -10,30 +10,32 @@
     color: white;
     position: absolute;
     top: 5rem;
-    left: 8rem;
+    left: 20rem;
 }
 .services-cover h4 {
     color: white;
     position: absolute;
     top: 8rem;
-    left: 9rem;
+    left: 21rem;
 }
-.services-cover button {
+.services-cover a {
     position: absolute;
-    top: 12rem;
-    left: 9rem;
+    top: 11rem;
+    left: 21rem;
 }
 .services-gallery h2 {
-    margin-left: 8rem;
+    margin-left: 4rem;
 }
 .services-gallery {
     margin-top: 2rem;
 }
 .services-gallery-content {
-    object-fit: cover;
     float: left;
-    margin-left: 8rem;
+    margin-left: 4rem;
     margin-top: 2rem;
+}
+.services-gallery-content img {
+    object-fit: cover;
 }
 .services-gallery-desc {
     text-align: center;
