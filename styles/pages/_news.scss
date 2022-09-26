@@ -7,6 +7,13 @@ $article-width: 25rem;
     padding-right: 0;
 }
 
+.news {
+    h2{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+
 .news-container {
     @include news-basestyle();
     flex-wrap: wrap;
@@ -15,6 +22,10 @@ $article-width: 25rem;
     justify-content: left;
     align-items: center;
     flex-direction: column;
+}
+
+.article-nav {
+    padding: 1rem;
 }
 
 .img-container {
@@ -27,10 +38,9 @@ $article-width: 25rem;
     }
 }
 
-
 .news-article {
     @include news-basestyle();
-    padding: 1rem;
+    padding: 2rem;
     margin-top: 2rem;
     flex-direction: column;
 }
