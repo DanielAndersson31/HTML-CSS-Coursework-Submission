@@ -70,6 +70,7 @@ a:not([class]) {
 img,
 picture {
   max-width: 100%;
+  max-height: 100%;
   display: block;
 }
 
@@ -498,4 +499,79 @@ body {
   font-size: 18px;
   font-weight: 700;
   letter-spacing: 7.4px;
+}
+
+.news-container {
+  display: flex;
+  padding-left: 0;
+  padding-right: 0;
+  flex-wrap: wrap;
+  padding-top: 1rem;
+  gap: 2rem;
+  justify-content: left;
+  align-items: center;
+  flex-direction: column;
+}
+
+.img-container {
+  display: flex;
+  padding-left: 0;
+  padding-right: 0;
+  height: 20rem;
+}
+.img-container img {
+  display: flex;
+  padding-left: 0;
+  padding-right: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.news-article {
+  display: flex;
+  padding-left: 0;
+  padding-right: 0;
+  padding: 1rem;
+  margin-top: 2rem;
+  flex-direction: column;
+}
+
+.card {
+  overflow: hidden;
+  width: 25rem;
+  height: auto;
+  border-radius: 0;
+}
+.card time {
+  font-size: var(--font-size-xs);
+  padding: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.zoom {
+  width: 25rem;
+  height: 17rem;
+  overflow: hidden;
+}
+.zoom img {
+  border-radius: 0;
+  width: 25rem;
+  height: 17rem;
+  transition: 1s all ease-in-out;
+}
+.zoom img:hover {
+  transform: scale(1.1);
+}
+
+@media (min-width: 62rem) {
+  .news-container {
+    flex-direction: row;
+  }
+}
+.btn-more,
+.btn-back {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  margin-top: 5rem;
 }/*# sourceMappingURL=main.css.map */
