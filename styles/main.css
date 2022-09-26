@@ -150,69 +150,62 @@ body {
   height: 20rem;
 }
 .news img {
-  -o-object-fit: cover;
-     object-fit: cover;
   display: flex;
   padding-left: 0;
   padding-right: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .news .news-article {
   display: flex;
-  padding: 1rem;
   padding-left: 0;
   padding-right: 0;
+  padding: 1rem;
   margin-top: 2rem;
   flex-direction: column;
 }
-.news .article-nav {
+.news .news-container {
   display: flex;
-}
-
-.news-container {
-  display: flex;
-  flex-wrap: wrap;
-  padding-top: 1rem;
   padding-left: 0;
   padding-right: 0;
+  flex-wrap: wrap;
+  padding-top: 1rem;
   gap: 2rem;
   justify-content: left;
   align-items: center;
   flex-direction: column;
 }
-
-@media (min-width: 62rem) {
-  .news-container {
-    flex-direction: row;
-  }
-}
-.card {
+.news .news-container .card {
   overflow: hidden;
   width: 25rem;
   height: auto;
   border-radius: 0;
 }
-.card time {
-  font-size: var(--font-size-xs);
-  padding: 0.5rem;
-  margin-left: 0.5rem;
-}
-
-.zoom {
+.news .news-container .card .zoom {
   width: 25rem;
   height: 17rem;
   overflow: hidden;
 }
-.zoom img {
+.news .news-container .card .zoom img {
   border-radius: 0;
   width: 25rem;
   height: 17rem;
   transition: 1s all ease-in-out;
 }
-.zoom img:hover {
+.news .news-container .card .zoom img:hover {
   transform: scale(1.1);
 }
-
-.btn-more, .btn-back {
+.news .news-container .card time {
+  font-size: var(--font-size-xs);
+  padding: 0.5rem;
+  margin-left: 0.5rem;
+}
+@media (min-width: 62rem) {
+  .news .news-container {
+    flex-direction: row;
+  }
+}
+.news .btn-more, .news .btn-back {
   display: flex;
   justify-content: center;
   padding: 2rem;
