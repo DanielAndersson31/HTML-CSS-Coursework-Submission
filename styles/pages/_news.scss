@@ -7,11 +7,10 @@ $article-width: 25rem;
     padding-right: 0;
 }
 
-.news {
-}
+.news {}
 
 .news-hero {
-    background-image: url(../../assets/images/world.jpg);
+    background-image: url(../../assets/images/readme.jpg);
     height: 40rem;
     background-position: center;
     background-repeat: no-repeat;
@@ -23,26 +22,18 @@ $article-width: 25rem;
 .hero-text {
     h1 {
         color: var(--color-bg-alt);
-        position: absolute;
         top: 15rem;
-        left: 10rem;
+        left: 5rem;
     }
-
-    p {
-        color: var(--color-bg-alt);
-        position: absolute;
-        top: 20rem;
-        left: 10rem;
-    }  
 }
 
+
 .news-container {
-    @include news-basestyle();
+    display: flex;
     flex-wrap: wrap;
     padding-top: 1rem;
     gap: 2rem;
     justify-content: left;
-    align-items: center;
     flex-direction: column;
 }
 
@@ -69,8 +60,8 @@ $article-width: 25rem;
 
 .card {
     overflow: hidden;
-    width: $article-width;
     height: auto;
+    width: $article-width;
     border-radius: $border-radius;
 
     time {
@@ -104,8 +95,39 @@ $article-width: 25rem;
 }
 
 .news-subscription {
-    padding: 2rem;
-    
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    line-height: 1;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+    }
+
+    p {
+        text-align: center;
+        @media screen and (min-width: 768px) {
+            text-align: end;
+        }
+    }
+
+    form {
+        width: 100%;
+        input {
+            border: 3px solid var(--color-accent-dark);
+            box-shadow: none;
+        
+         button {
+            border: 3px solid var(--color-accent-dark);
+            border-left: none;
+            &:hover {
+                background-color: var(--color-accent-dark);
+            }
+        }
+    }
+
 }
 
 .btn-more,

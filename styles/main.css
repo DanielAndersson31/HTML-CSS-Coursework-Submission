@@ -633,7 +633,7 @@ body {
 }
 
 .news-hero {
-  background-image: url(../../assets/images/world.jpg);
+  background-image: url(../../assets/images/readme.jpg);
   height: 40rem;
   background-position: center;
   background-repeat: no-repeat;
@@ -646,7 +646,7 @@ body {
   color: var(--color-bg-alt);
   position: absolute;
   top: 15rem;
-  left: 10rem;
+  left: 5rem;
 }
 .hero-text p {
   color: var(--color-bg-alt);
@@ -657,13 +657,10 @@ body {
 
 .news-container {
   display: flex;
-  padding-left: 0;
-  padding-right: 0;
   flex-wrap: wrap;
   padding-top: 1rem;
   gap: 2rem;
   justify-content: left;
-  align-items: center;
   flex-direction: column;
 }
 
@@ -696,8 +693,8 @@ body {
 
 .card {
   overflow: hidden;
-  width: 25rem;
   height: auto;
+  width: 25rem;
   border-radius: 0;
 }
 .card time {
@@ -727,7 +724,39 @@ body {
   }
 }
 .news-subscription {
-  padding: 2rem;
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  line-height: 1;
+}
+@media screen and (min-width: 768px) {
+  .news-subscription {
+    flex-direction: row;
+  }
+}
+.news-subscription p {
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .news-subscription p {
+    text-align: end;
+  }
+}
+.news-subscription form {
+  width: 100%;
+}
+.news-subscription form input {
+  border: 3px solid var(--color-accent-dark);
+  box-shadow: none;
+}
+.news-subscription form button {
+  border: 3px solid var(--color-accent-dark);
+  border-left: none;
+}
+.news-subscription form button:hover {
+  background-color: var(--color-accent-dark);
 }
 
 .btn-more,
