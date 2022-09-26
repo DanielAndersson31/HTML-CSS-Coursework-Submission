@@ -319,7 +319,7 @@ body {
 .home-main .hero {
   padding: calc(var(--section-margin) * 2) 0 12rem 0;
   margin-bottom: var(--section-margin);
-  background-image: url("../../assets/images/home/hero.jpg");
+  background-image: url("../assets/images/home/hero.jpg");
   background-size: cover;
   background-position: 0% 50%;
 }
