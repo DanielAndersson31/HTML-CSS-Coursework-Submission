@@ -44,6 +44,7 @@ $article-width: 25rem;
     height: 20rem;
 
     img {
+        margin-top: 1rem;
         @include news-basestyle();
         object-fit: cover;
     }
@@ -106,6 +107,7 @@ $article-width: 25rem;
 
     p {
         text-align: center;
+
         @media screen and (min-width: 768px) {
             text-align: end;
         }
@@ -113,19 +115,22 @@ $article-width: 25rem;
 
     form {
         width: 100%;
+
         input {
             border: 3px solid var(--color-accent-dark);
             box-shadow: none;
-        
-         button {
-            border: 3px solid var(--color-accent-dark);
-            border-left: none;
-            &:hover {
-                background-color: var(--color-accent-dark);
+
+            button {
+                border: 3px solid var(--color-accent-dark);
+                border-left: none;
+
+                &:hover {
+                    background-color: var(--color-accent-dark);
+                }
             }
         }
-    }
 
+    }
 }
 
 .btn-more,

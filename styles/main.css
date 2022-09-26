@@ -644,15 +644,8 @@ body {
 
 .hero-text h1 {
   color: var(--color-bg-alt);
-  position: absolute;
   top: 15rem;
   left: 5rem;
-}
-.hero-text p {
-  color: var(--color-bg-alt);
-  position: absolute;
-  top: 20rem;
-  left: 10rem;
 }
 
 .news-container {
@@ -675,6 +668,7 @@ body {
   height: 20rem;
 }
 .img-container img {
+  margin-top: 1rem;
   display: flex;
   padding-left: 0;
   padding-right: 0;
@@ -751,11 +745,11 @@ body {
   border: 3px solid var(--color-accent-dark);
   box-shadow: none;
 }
-.news-subscription form button {
+.news-subscription form input button {
   border: 3px solid var(--color-accent-dark);
   border-left: none;
 }
-.news-subscription form button:hover {
+.news-subscription form input button:hover {
   background-color: var(--color-accent-dark);
 }
 
