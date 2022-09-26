@@ -305,6 +305,7 @@ body {
   }
 }
 .home-main .latest-news .news-gallery a {
+  width: 100%;
   color: var(--color-text);
   text-decoration: none;
   border-radius: 0;
@@ -317,6 +318,10 @@ body {
   overflow: hidden;
 }
 .home-main .latest-news .news-gallery a img {
+  height: 18rem;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   transition: transform calc(var(--transition-time) * 2) ease-out;
 }
 .home-main .latest-news .news-gallery a:hover img {
@@ -361,7 +366,7 @@ body {
 .home-main .latest-news .subscribe form button:hover {
   background-color: var(--color-accent-dark);
 }
-.home-main .who-are-you .container {
+.home-main .who-are-you .row {
   max-width: 768px;
   margin-inline: auto;
   text-align: center;
