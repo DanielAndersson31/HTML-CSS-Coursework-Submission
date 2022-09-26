@@ -1,0 +1,19 @@
+.body-about {
+    .hero {
+        background-image: url(/HTML-CSS-Coursework-Submission/assets/images/pexels-sylvie-muller-160389.jpg);
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        position: relative;
+        z-index: 2;
+    }
+  
+}
+.hero::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0; 
+}
