@@ -13,6 +13,15 @@
   --font-size-m: 2rem;
   --font-size-l: 3rem;
   --font-size-xl: 4rem;
+}
 
-  // Sizes etc...
+@media screen and (max-width: 576px) {
+  :root {
+    // Mobile Fonts
+    --multiplier: 0.8;
+
+    --font-size-m: calc(2rem * var(--multiplier));
+    --font-size-l: calc(3rem * var(--multiplier));
+    --font-size-xl: calc(4rem * var(--multiplier));
+  }
 }
