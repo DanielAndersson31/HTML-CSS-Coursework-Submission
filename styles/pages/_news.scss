@@ -7,24 +7,6 @@ $article-width: 25rem;
     padding-right: 0;
 }
 
-.container-img {
-    @include news-basestyle();
-    height: 20rem;
-}
-
-img {
-    @include news-basestyle();
-    object-fit: cover;
-}
-
-.news-article {
-    @include news-basestyle();
-    padding: 1rem;
-    margin-top: 2rem;
-    flex-direction: column;
-}
-
-
 .news-container {
     @include news-basestyle();
     flex-wrap: wrap;
@@ -33,7 +15,24 @@ img {
     justify-content: left;
     align-items: center;
     flex-direction: column;
+}
 
+.img-container {
+    @include news-basestyle();
+    height: 20rem;
+
+    img {
+        @include news-basestyle();
+        object-fit: cover;
+    }
+}
+
+
+.news-article {
+    @include news-basestyle();
+    padding: 1rem;
+    margin-top: 2rem;
+    flex-direction: column;
 }
 
 .card {
