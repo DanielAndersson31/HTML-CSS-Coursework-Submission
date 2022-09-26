@@ -4,12 +4,14 @@
   --color-bg-alt: #afafaf;
   --color-text: #242424;
   --color-text-light: #404040;
-  --color-accent: #da7800;
+  --color-accent: rgb(234, 138, 4);
   --color-accent-dark: #202731;
+  --color-accent-dark-hover: hsl(215, 21%, 20%);
 
   // Fonts
   --font-size-xs: 0.75rem;
   --font-size-s: 1rem;
+  --font-size-ms: 1.25rem;
   --font-size-m: 2rem;
   --font-size-l: 3rem;
   --font-size-xl: 4rem;
