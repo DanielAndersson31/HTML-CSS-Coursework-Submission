@@ -143,20 +143,22 @@ body {
   background-color: var(--color-test);
 }
 
-.news .container-img {
+.container-img {
   display: flex;
   padding-left: 0;
   padding-right: 0;
   height: 20rem;
 }
-.news img {
+
+img {
   display: flex;
   padding-left: 0;
   padding-right: 0;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.news .news-article {
+
+.news-article {
   display: flex;
   padding-left: 0;
   padding-right: 0;
@@ -164,7 +166,8 @@ body {
   margin-top: 2rem;
   flex-direction: column;
 }
-.news .news-container {
+
+.news-container {
   display: flex;
   padding-left: 0;
   padding-right: 0;
@@ -175,37 +178,41 @@ body {
   align-items: center;
   flex-direction: column;
 }
-.news .news-container .card {
+
+.card {
   overflow: hidden;
   width: 25rem;
   height: auto;
   border-radius: 0;
 }
-.news .news-container .card .zoom {
+.card time {
+  font-size: var(--font-size-xs);
+  padding: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.zoom {
   width: 25rem;
   height: 17rem;
   overflow: hidden;
 }
-.news .news-container .card .zoom img {
+.zoom img {
   border-radius: 0;
   width: 25rem;
   height: 17rem;
   transition: 1s all ease-in-out;
 }
-.news .news-container .card .zoom img:hover {
+.zoom img:hover {
   transform: scale(1.1);
 }
-.news .news-container .card time {
-  font-size: var(--font-size-xs);
-  padding: 0.5rem;
-  margin-left: 0.5rem;
-}
+
 @media (min-width: 62rem) {
-  .news .news-container {
+  .news-container {
     flex-direction: row;
   }
 }
-.news .btn-more, .news .btn-back {
+.btn-more,
+.btn-back {
   display: flex;
   justify-content: center;
   padding: 2rem;
