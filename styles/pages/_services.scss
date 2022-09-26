@@ -4,7 +4,7 @@
 .services-cover img {
     object-fit: cover;
     width: 100%;
-    height: 40rem;
+    height: 35rem;
 }
 .services-cover h3 {
     color: white;
@@ -18,15 +18,24 @@
     top: 8rem;
     left: 9rem;
 }
+.services-cover button {
+    position: absolute;
+    top: 12rem;
+    left: 9rem;
+}
 .services-gallery h2 {
     margin-left: 8rem;
+}
+.services-gallery {
+    margin-top: 2rem;
 }
 .services-gallery-content {
     object-fit: cover;
     float: left;
-    margin: 8rem;
-    
+    margin-left: 8rem;
+    margin-top: 2rem;
 }
 .services-gallery-desc {
     text-align: center;
+    padding: 1rem;
 }
