@@ -21,7 +21,7 @@
     <header>
       <nav class="navbar navbar-expand-lg bg-light">
         <div class="container">
-          <a href="index.html" class="navbar-brand">GBG/WEBDEV</a>
+          <a href="index.html" aria-current="page" class="navbar-brand">GBG/WEBDEV</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -137,14 +137,53 @@
           <div class="row">
             <div class="col">
               <h2>WHAT'S HAPPENING</h2>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla obcaecati modi incidunt corrupti
-                eligendi, esse placeat tenetur tempora aliquam eius.
-              </p>
-              <p>
-                Esse placeat tenetur tempora aliquam eius. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Aliquid, veniam.
-              </p>
+              <div class="news-gallery">
+                <a href="pages/news.html" class="card">
+                  <!-- TODO!!!!! -->
+                  <div class="image-wrapper">
+                    <img src="assets/images/home/who.jpg" alt="..." />
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, eum!</p>
+                    <p class="text-small">2022-08-10</p>
+                  </div>
+                </a>
+                <a href="pages/news.html" class="card">
+                  <!-- TODO!!!!! -->
+                  <div class="image-wrapper">
+                    <img src="assets/images/home/who.jpg" alt="..." />
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, eum!</p>
+                    <p class="text-small">2022-08-10</p>
+                  </div>
+                </a>
+                <a href="pages/news.html" class="card">
+                  <!-- TODO!!!!! -->
+                  <div class="image-wrapper">
+                    <img src="assets/images/home/who.jpg" alt="..." />
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, eum!</p>
+                    <p class="text-small">2022-08-10</p>
+                  </div>
+                </a>
+              </div>
+              <div class="subscribe">
+                <div>
+                  <p>Subscribe to our</p>
+                  <h3>Newsletter:</h3>
+                </div>
+                <form action="">
+                  <div class="input-group">
+                    <div class="form-floating d-flex flex-row">
+                      <input type="email" class="form-control" id="email" placeholder="email address" />
+                      <label for="email">Your Email Address</label>
+                    </div>
+                    <button type="submit" class="btn btn-outline-dark">Subscribe</button>
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
         </div>
