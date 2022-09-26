@@ -49,6 +49,10 @@ $article-width: 25rem;
 }
 
 .zoom {
+    width: $article-width;
+    height: 17rem;
+    overflow: hidden;
+
     img {
         border-radius: $border-radius;
         width: $article-width;
@@ -59,10 +63,6 @@ $article-width: 25rem;
     img:hover {
         transform: scale(1.1);
     }
-
-    width: $article-width;
-    height: 17rem;
-    overflow: hidden;
 }
 
 @media (min-width: 62rem) {
