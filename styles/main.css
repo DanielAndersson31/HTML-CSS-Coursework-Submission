@@ -506,9 +506,27 @@ body {
   letter-spacing: 7.4px;
 }
 
-.news h2 {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+.news-hero {
+  background-image: url(../../assets/images/world.jpg);
+  height: 40rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  position: relative;
+}
+
+.hero-text h1 {
+  color: var(--color-bg-alt);
+  position: absolute;
+  top: 15rem;
+  left: 10rem;
+}
+.hero-text p {
+  color: var(--color-bg-alt);
+  position: absolute;
+  top: 20rem;
+  left: 10rem;
 }
 
 .news-container {
