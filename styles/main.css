@@ -143,15 +143,11 @@ body {
 }
 
 #windowgirl {
-  border-radius: 5px;
+  border-radius: 0.75rem;
   width: 100%;
   height: auto;
   max-width: 550px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
-
-#windowgirl:hover {
-  opacity: 80%;
 }
 
 #worldmap {
@@ -164,21 +160,23 @@ body {
 }
 
 #applybtn {
-  margin-top: 30px;
+  margin-top: 1rem;
+  font-size: var(--font-size-s);
 }
 
 #applybtn:hover {
   opacity: 50%;
+  background-color: var(--color-accent);
 }
 
 .career-header {
   height: 50rem;
-  background-image: linear-gradient(to right bottom, rgba(76, 216, 255, 0.8), rgba(30, 108, 217, 0.8)), url("/assets/images/pexels-negative-space-169573.jpg");
+  background-image: linear-gradient(to right bottom, var(--color-accent), rgba(0, 38, 90, 0.5)), url("/assets/images/pexels-negative-space-169573.jpg");
   background-size: cover;
   background-position: top;
   position: relative;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-          clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 50vh, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 50vh, 0 100%);
 }
 
 .brand-box {
@@ -188,7 +186,7 @@ body {
 }
 
 .brand {
-  font-size: 20px;
+  font-size: var(--font-size-xl);
 }
 
 .text-box {
@@ -223,12 +221,12 @@ body {
 
 .apply-header {
   height: 50rem;
-  background-image: linear-gradient(to right bottom, rgba(76, 216, 255, 0.8), rgba(30, 108, 217, 0.8)), url("/assets/images/pexels-pixabay-327540.jpg");
+  background-image: linear-gradient(to right bottom, var(--color-accent), rgba(0, 38, 90, 0.5)), url("/assets/images/pexels-pixabay-327540.jpg");
   background-size: cover;
   background-position: top;
   position: relative;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-          clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 50vh, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 50vh, 0 100%);
 }
 
 .brand-box {
@@ -238,7 +236,7 @@ body {
 }
 
 .brand {
-  font-size: 20px;
+  font-size: var(--font-size-xl);
 }
 
 .text-box {
@@ -254,12 +252,12 @@ body {
   text-transform: uppercase;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  margin-bottom: 30px;
+  margin-bottom: 5rem;
 }
 
 .heading-primary-main {
   display: block;
-  font-size: 26px;
+  font-size: var(--font-size-m);
   font-weight: 400;
   letter-spacing: 5px;
 }

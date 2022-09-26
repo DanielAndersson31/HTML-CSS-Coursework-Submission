@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>GBG WEBDEV</title>
+    <title>Career - GBG WEBDEV</title>
     <meta name="keywords" content="" />
     <meta name="description" content="" />
     <meta name="author" content="Group6" />
@@ -16,6 +16,10 @@
       href="../node_modules/bootstrap/dist/css/bootstrap.css"
     />
     <script defer src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script
+      src="https://kit.fontawesome.com/7e1877c3e5.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="../styles/main.css" />
@@ -42,7 +46,9 @@
               <!-- Don't forget to add 'aria-current="page"' and class 'active' -->
               <a class="nav-link" href="services.html">Services</a>
               <a class="nav-link" href="news.html">News</a>
-              <a class="nav-link" href="career.html">Career</a>
+              <a class="nav-link active aria-current=page" href="career.html"
+                >Career</a
+              >
               <a class="nav-link" href="about.html">About</a>
               <a class="nav-link" href="contact.html">Contact</a>
             </div>
@@ -53,26 +59,34 @@
     <main>
       <header class="career-header">
         <div class="brand-box">
-          <span class="brand">Example Brand</span>
+          <article class="brand">
+            <a href="https://www.discord.com"
+              ><i class="fa-brands fa-discord fa-2xs"></i
+            ></a>
+            <a href="https://github.com/P-Ahlinder"
+              ><i class="fa-brands fa-github fa-2xs"></i
+            ></a>
+          </article>
         </div>
 
         <div class="text-box">
           <h1 class="heading-primary">
-            <span class="heading-primary-main">Make career @</span>
+            <span class="heading-primary-main">Make Career @</span>
             <span class="heading-primary-sub">GBG WEBDEV</span>
           </h1>
         </div>
       </header>
 
-      <div class="navigation text-center">Navbar & cover goes here!!</div>
-
       <body class="career-body">
         <div class="container">
-          <div class="row text-center" style="margin-top: 40px">
-            <article class="col-md" style="margin-top: 10px">
-              <h1 class="join">Join us from.. anywhere</h1>
-              <h2>Let's grow together</h2>
-              <h5>
+          <div class="row text-center">
+            <article
+              class="col-md"
+              style="margin-top: 10px; margin-right: 2rem"
+            >
+              <h1 style="margin-bottom: 1rem">Join us from.. anywhere</h1>
+              <h3>Let's grow together!</h3>
+              <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Obcaecati molestiae nisi expedita quidem consequuntur vel quis
                 assumenda iste neque, natus totam eligendi in necessitatibus,
@@ -80,22 +94,21 @@
                 molestiae nisi expedita quidem consequuntur vel quis assumenda
                 iste neque, natus totam eligendi in necessitatibus, doloribus
                 fugiat, officia porro tenetur libero?
-              </h5>
+              </p>
               <button
                 id="applybtn"
-                type="button"
-                class="btn btn-outline-success and-all-other-classes bg-primary"
+                type="button;"
+                class="btn btn-outline-success and-all-other-classes"
+                style="border-color: var(--color-accent)"
               >
-                <a
-                  href="apply.html"
-                  style="text-decoration: none; color: whitesmoke"
+                <a href="apply.html" style="text-decoration: none"
                   >See available jobs</a
                 >
               </button>
             </article>
 
             <article
-              class="col-md gx-1"
+              class="col-md gx-3"
               style="margin-top: 10px; justify-content: center"
             >
               <img
