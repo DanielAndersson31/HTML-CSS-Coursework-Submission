@@ -629,14 +629,28 @@ body {
   letter-spacing: 7.4px;
 }
 
+.news {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.news-title {
+  text-align: center;
+  padding: 4rem;
+  margin-bottom: 2rem;
+}
+.news-title p {
+  font-style: italic;
+  padding: 0.5rem;
+}
+
 .news-hero {
   background-image: url(../../assets/images/readme.jpg);
   height: 40rem;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  text-align: center;
-  position: relative;
 }
 
 .hero-text h1 {
@@ -649,6 +663,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   padding-top: 1rem;
+  padding-left: 1rem;
   gap: 2rem;
   justify-content: left;
   flex-direction: column;
@@ -722,12 +737,12 @@ body {
   }
 }
 .news-subscription {
-  margin-top: 1.5rem;
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  line-height: 1;
+  line-height: 1.5;
 }
 @media screen and (min-width: 768px) {
   .news-subscription {

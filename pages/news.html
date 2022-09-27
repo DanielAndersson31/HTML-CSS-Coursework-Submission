@@ -32,7 +32,6 @@
           aria-controls="navbarNavAltMarkup"
           aria-expanded="false"
           aria-label="Toggle navigation"
-          onclick="this.classList.toggle('open-burger')"
         >
           <!-- <span class="navbar-toggler-icon"></span> -->
           <span class="burger">
@@ -54,12 +53,13 @@
       </div>
     </nav>
   </header>
+
   <main class="news">
-    <div class="news-hero">
-      <!-- <div class="hero-text">
-        <h1>Latest about us!</h1> -->
-      </div>
-    </div>
+    <div class="news-hero"></div>
+    <section class="news-title">
+      <h1>The best way to enjoy your coffe!</h1>
+      <p>Latest news from us!</p>
+    </section>
 
     <div class="container news-container">
       <div class="card shadow">
@@ -98,30 +98,19 @@
         </a>
         <time datetime="2022-09-19">2022-09-19</time>
       </div>
-      <div class="card shadow">
-        <a href="news-pages/article-firstpage.html">
-          <div class="zoom">
-            <img src="../assets/images/htmlbild.jpg" class="card-img-top"
-              alt="Picture of a computer standing on a table in a low lighted room." />
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">First Page!</h5>
-          </div>
-        </a>
-        <time datetime="2022-09-19">2022-09-19</time>
-      </div>
-
+      
       <!--Load More Funktion ( Old articles )-->
-      <div class="collapse" id="collapseExample">
+
+      <div class="collapse" id="collapsnews">
         <div class="collaps-body">
           <div class="card shadow">
-            <a href="">
+            <a href="../pages/news-pages/article-firstpage.html">
               <div class="zoom">
-                <img src="../assets/images/computer.jpg" class="card-img-top"
-                  alt="Picture of a computer standing on a table in a low lighted room." />
+                <img src="../assets/images/htmlbild.jpg" class="card-img-top"
+                  alt="Picture of a box with HTML written in it and having a yellow background." />
               </div>
               <div class="card-body">
-                <h5 class="card-title">Test Funktion 4</h5>
+                <h5 class="card-title">First Pages!</h5>
               </div>
             </a>
             <time datetime="2022-09-19">2022-09-19</time>
@@ -129,7 +118,7 @@
         </div>
       </div>
 
-      <div class="collapse" id="collapseExample">
+      <div class="collapse" id="collapsnews">
         <div class="collaps-body">
           <div class="card shadow">
             <a href="">
@@ -138,15 +127,15 @@
                   alt="Picture of a computer standing on a table in a low lighted room." />
               </div>
               <div class="card-body">
-                <h5 class="card-title">Testa funktion 3</h5>
+                <h5 class="card-title">Breaking News!</h5>
               </div>
             </a>
-            <time datetime="2022-09-22">2022-09-22</time>
+            <time datetime="2022-09-19">2022-09-19</time>
           </div>
         </div>
       </div>
 
-      <div class="collapse" id="collapseExample">
+      <div class="collapse" id="collapsnews">
         <div class="collaps-body">
           <div class="card shadow">
             <a href="">
@@ -155,10 +144,10 @@
                   alt="Picture of a computer standing on a table in a low lighted room." />
               </div>
               <div class="card-body">
-                <h5 class="card-title">Testa funktion 2</h5>
+                <h5 class="card-title">Breaking News!</h5>
               </div>
             </a>
-            <time datetime="2022-09-22">2022-09-22</time>
+            <time datetime="2022-09-19">2022-09-19</time>
           </div>
         </div>
       </div>
@@ -179,7 +168,7 @@
 
     <div class="btn-more">
       <button class="button-inverse active collapsed"  type="button" data-bs-toggle="collapse"
-        data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" aria-pressed="true">
+        data-bs-target="#collapsnews" aria-expanded="false" aria-controls="collapseExample" aria-pressed="true">
         Load more GBG/WEBDEV news!
       </button>
     </div>
