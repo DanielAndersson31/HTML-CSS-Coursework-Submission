@@ -11,10 +11,7 @@
     <meta name="author" content="Group6" />
 
     <!-- Bootstrap -->
-    <link
-      rel="stylesheet"
-      href="node_modules/bootstrap/dist/css/bootstrap.css"
-    />
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" />
     <script defer src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
 
     <!-- Stylesheet -->
@@ -22,9 +19,15 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg bg-light">
+      <!-- RGB Colos
+        black rgb(32, 39, 49)
+      -->
+      <nav
+        class="navbar navbar-expand-lg"
+        style="background-image: linear-gradient(-90deg, rgb(230, 36, 36), rgb(218, 120, 0))"
+      >
         <div class="container">
-          <a href="index.html" class="navbar-brand">GBG/WEBDEV</a>
+          <a href="index.html" class="navbar-brand fw-bold fs-3 text-light">GBG/WEBDEV</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -33,17 +36,18 @@
             aria-controls="navbarNavAltMarkup"
             aria-expanded="false"
             aria-label="Toggle navigation"
+            text-light
           >
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon text-light"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav ms-auto">
+            <div class="navbar-nav ms-auto p-3">
               <!-- Don't forget to add 'aria-current="page"' and class 'active' -->
-              <a class="nav-link" href="pages/services.html">Services</a>
-              <a class="nav-link" href="pages/news.html">News</a>
-              <a class="nav-link" href="pages/career.html">Career</a>
-              <a class="nav-link" href="pages/about.html">About</a>
-              <a class="nav-link" href="pages/contact.html">Contact</a>
+              <a class="nav-link fs-4 text-center fw-bold text-light" href="pages/services.html">Services</a>
+              <a class="nav-link fs-4 text-center fw-bold text-light" href="pages/news.html">News</a>
+              <a class="nav-link fs-4 text-center fw-bold text-light" href="pages/career.html">Career</a>
+              <a class="nav-link fs-4 text-center fw-bold text-light" href="pages/about.html">About</a>
+              <a class="nav-link fs-4 text-center fw-bold text-light" href="pages/contact.html">Contact</a>
             </div>
           </div>
         </div>
