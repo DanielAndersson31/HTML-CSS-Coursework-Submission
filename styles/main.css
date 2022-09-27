@@ -310,12 +310,13 @@ body {
   left: 21rem;
 }
 
-.services-gallery h2 {
+#services-h2 {
+  margin-top: 3rem;
   margin-left: 4rem;
 }
 
 .services-gallery {
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .services-gallery-content {
@@ -340,4 +341,16 @@ body {
 .services-gallery-desc {
   text-align: center;
   padding: 1rem;
+}
+
+.services-card {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.services-card img {
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=main.css.map */
