@@ -34,6 +34,7 @@
     margin-left: 4rem;
     margin-top: 2rem;
     border: 1px solid rgb(190, 190, 190);
+    border-radius: 2%;
     width: 18.75rem;
 }
 .services-gallery-content:hover {
@@ -41,6 +42,7 @@
 }
 .services-gallery-content img {
     object-fit: cover;
+    border-radius: 2%;
 }
 .services-gallery-desc {
     text-align: center;

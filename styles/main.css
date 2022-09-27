@@ -323,6 +323,7 @@ body {
   margin-left: 4rem;
   margin-top: 2rem;
   border: 1px solid rgb(190, 190, 190);
+  border-radius: 2%;
   width: 18.75rem;
 }
 
@@ -333,6 +334,7 @@ body {
 .services-gallery-content img {
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 2%;
 }
 
 .services-gallery-desc {
