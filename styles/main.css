@@ -712,6 +712,13 @@ body {
   transform: scale(1.1);
 }
 
+.card-body h5 {
+  transition: 0.4s;
+}
+.card-body h5:hover {
+  color: var(--color-accent);
+}
+
 @media (min-width: 62rem) {
   .news-container {
     flex-direction: row;
@@ -754,6 +761,7 @@ body {
 }
 
 .btn-more,
+.btn-newslink,
 .btn-back {
   display: flex;
   justify-content: center;

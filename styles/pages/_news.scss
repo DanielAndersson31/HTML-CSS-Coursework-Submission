@@ -87,6 +87,17 @@ $article-width: 25rem;
     }
 }
 
+.card-body {
+
+    h5 {
+        transition: 0.4s;
+    }
+
+    h5:hover {
+        color: var(--color-accent);
+    }
+}
+
 @media (min-width: 62rem) {
     .news-container {
         flex-direction: row;
@@ -134,6 +145,7 @@ $article-width: 25rem;
 }
 
 .btn-more,
+.btn-newslink,
 .btn-back {
     display: flex;
     justify-content: center;
