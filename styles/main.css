@@ -779,7 +779,7 @@ body {
   }
 }
 .main-about .we-are-gbgwebdev video {
-  width: 30rem;
+  width: 100%;
   box-shadow: var(--box-shadow);
   content: cover;
   padding: 0;
@@ -792,13 +792,17 @@ body {
 }
 .main-about .we-are-gbgwebdev article button {
   margin-top: 0.5rem;
-  -webkit-margin-end: auto;
-          margin-inline-end: auto;
+  width: 10rem;
+  margin-left: 1.5rem;
 }
 .main-about .we-are-gbgwebdev article p {
   margin-left: auto;
   padding: 1rem 2rem;
   font-size: var(--font-size-sm);
+}
+.main-about .we-are-gbgwebdev article h2, .main-about .we-are-gbgwebdev article h3 {
+  margin-right: auto;
+  padding: 1rem 2rem;
 }
 .main-about .we-are-gbgwebdev .expanded-img {
   display: flex;
@@ -821,7 +825,7 @@ body {
 @media screen and (min-width: 768px) {
   .main-about .info .row {
     flex-direction: row;
-    padding-top: 1rem;
+    padding-top: 0rem;
   }
 }
 .main-about .info .row .col {
@@ -830,4 +834,34 @@ body {
 .main-about .info .row .col h2 {
   font-size: 7rem;
   color: var(--color-accent);
+}
+.main-about .our-workspace {
+  background-image: url(/HTML-CSS-Coursework-Submission/assets/images/pexels-olga-neptuna-2078774.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 2;
+  padding: var(--section-margin);
+  margin-bottom: var(--section-margin);
+}
+.main-about .our-workspace h2 {
+  margin-bottom: var(--section-margin);
+  background-color: rgba(0, 0, 0, 0.156);
+  color: var(--color-bg);
+  font-size: var(--font-size-m);
+}
+.main-about .our-workspace p {
+  background-color: rgba(0, 0, 0, 0.156);
+  color: var(--color-bg);
+  font-size: var(--font-size-sm);
+}
+.main-about .our-workspace::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 166, 0, 0.556);
+  z-index: -1;
 }/*# sourceMappingURL=main.css.map */
