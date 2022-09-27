@@ -757,7 +757,7 @@ body {
   margin-top: 3rem;
 }
 
-.main-content {
+.contact-main .main-content {
   background-image: linear-gradient(rgba(97, 11, 236, 0.3), rgba(11, 25, 155, 0.3)), url("/assets/images/Contact-Support.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -769,19 +769,16 @@ body {
   flex-direction: column;
   margin-bottom: 2rem;
 }
-
-.main-content h1,
-h3 {
+.contact-main .main-content h1,
+.contact-main .main-content h3 {
   padding: 1rem;
   color: white;
   font-weight: lighter;
 }
-
-.main-content h1 {
+.contact-main .main-content h1 {
   border-bottom: 3px solid rgb(255, 255, 255);
 }
-
-.contact-container {
+.contact-main .contact-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -789,88 +786,73 @@ h3 {
   gap: 5rem;
   flex-basis: 1 1 20rem;
 }
-
-.contact-container div {
+.contact-main .contact-container div {
   flex: 1 1 30rem;
   max-width: 40rem;
 }
-
-.contact-info {
+.contact-main .contact-info {
   text-align: center;
 }
-
-.contact-info div {
+.contact-main .contact-info div {
   padding: 3rem;
 }
-
-.contact-info div * {
+.contact-main .contact-info div * {
   padding: 1rem;
 }
-
-.contact-info div i {
+.contact-main .contact-info div i {
   color: var(--color-accent);
   font-size: 2rem;
   align-self: center;
 }
-
-.container-contact-form {
+.contact-main .container-contact-form {
   display: flex;
   padding: 2rem;
 }
-
-.contact-container {
+.contact-main .contact-container {
   display: flex;
   justify-content: center;
   padding: 2rem;
 }
-
-.sales-item h4,
-.support-item h4 {
+.contact-main .sales-item h4,
+.contact-main .support-item h4 {
   color: var(--color-accent);
 }
-
-.contact-form h2 {
+.contact-main .contact-form h2 {
   padding: 1rem;
   text-align: center;
 }
-
-.btn {
+.contact-main .btn {
   background-color: var(--color-accent);
   border: none;
 }
-.btn:hover {
+.contact-main .btn:hover {
   background-color: rgba(218, 120, 0, 0.8) !important;
 }
-
-.questions-and-answers {
+.contact-main .questions-and-answers {
   text-align: center;
 }
-
-.questions-and-answers h1,
-h2 {
+.contact-main .questions-and-answers h1,
+.contact-main h2 {
   padding: 1rem;
   color: var(-color-accent-dark);
 }
-
-.questions-and-answers img {
+.contact-main .questions-and-answers img {
   width: 100%;
   max-height: 40rem;
   box-shadow: 2px 4px 10px 3px rgba(32, 32, 32, 0.2);
 }
-
-.accordion-button {
+.contact-main .accordion-button {
   box-shadow: none !important;
   background-color: white !important;
   border-radius: 5px;
 }
-.accordion-button[aria-expanded=true] {
+.contact-main .accordion-button[aria-expanded=true] {
   color: white !important;
   background-color: var(--color-accent-dark) !important;
 }
-.accordion-button::after {
+.contact-main .accordion-button::after {
   filter: brightness(1000);
 }
-
-.accordion-body {
+.contact-main .accordion-body {
   padding-top: 0;
 }/*# sourceMappingURL=main.css.map */
