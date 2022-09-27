@@ -749,11 +749,11 @@ body {
   border: 3px solid var(--color-accent-dark);
   box-shadow: none;
 }
-.news-subscription form input button {
+.news-subscription form button {
   border: 3px solid var(--color-accent-dark);
   border-left: none;
 }
-.news-subscription form input button:hover {
+.news-subscription form button:hover {
   background-color: var(--color-accent-dark);
 }
 
