@@ -641,15 +641,8 @@ body {
 
 .hero-text h1 {
   color: var(--color-bg-alt);
-  position: absolute;
   top: 15rem;
   left: 5rem;
-}
-.hero-text p {
-  color: var(--color-bg-alt);
-  position: absolute;
-  top: 20rem;
-  left: 10rem;
 }
 
 .news-container {
