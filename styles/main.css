@@ -746,6 +746,18 @@ body {
   color: var(--color-bg);
   font-size: var(--font-size-ms);
 }
+.main-about .hero .col .hero-buttons {
+  margin-left: 2rem;
+}
+.main-about .hero .col .hero-buttons a:not(:last-child) {
+  margin-right: 1rem;
+}
+.main-about .hero .col a {
+  max-width: 20rem;
+  -webkit-margin-end: auto;
+          margin-inline-end: auto;
+  display: inline-block;
+}
 .main-about .hero::after {
   content: "";
   width: 100%;
@@ -800,4 +812,22 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   box-shadow: var(--box-shadow);
+}
+.main-about .info .row {
+  gap: 1.5rem;
+  flex-direction: column;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .main-about .info .row {
+    flex-direction: row;
+    padding-top: 1rem;
+  }
+}
+.main-about .info .row .col {
+  border-bottom: 0.1rem solid rgba(0, 0, 0, 0.323);
+}
+.main-about .info .row .col h2 {
+  font-size: 7rem;
+  color: var(--color-accent);
 }/*# sourceMappingURL=main.css.map */

@@ -37,6 +37,18 @@
         font-size: var(--font-size-ms);
         
       }
+      .hero-buttons{
+        margin-left: 2rem;
+        a:not(:last-child) {
+          margin-right: 1rem;
+        }
+      }
+      a{
+        max-width: 20rem;
+        margin-inline-end: auto;
+        display: inline-block;
+        
+      }
     
     }
     }
@@ -78,6 +90,8 @@
           button {
             margin-top: 0.5rem;
             margin-inline-end: auto;
+            
+          
           }
           p{
             margin-left: auto;
@@ -102,4 +116,26 @@
           }
         }
       }
+      .info {
+        .row {
+          gap: 1.5rem;
+          flex-direction: column;
+          @media screen and (min-width: 768px) {
+            flex-direction: row;
+            padding-top: 1rem;
+        }
+        justify-content: center;
+        .col {
+          border-bottom: 0.1rem solid rgba(0, 0, 0, 0.323);
+          
+          
+       
+        h2 {
+          font-size: 7rem;
+          color: var(--color-accent)
+        }
+      }
+      }
+
     }
+  }
