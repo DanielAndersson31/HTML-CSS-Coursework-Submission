@@ -707,20 +707,97 @@ body {
   margin-top: 5rem;
 }
 
-.body-about .hero {
-  background-image: url(/HTML-CSS-Coursework-Submission/assets/images/pexels-sylvie-muller-160389.jpg);
+.main-about {
+  --transition-time: 200ms;
+  --box-shadow: 0 2px 10px 2px rgba(0, 0, 0, 0.15);
+  --section-margin: 4rem;
+}
+@media screen and (min-width: 992px) {
+  .main-about {
+    --section-margin: 6rem;
+  }
+}
+.main-about .container {
+  margin-bottom: var(--section-margin);
+}
+.main-about .hero {
+  background-image: url(/HTML-CSS-Coursework-Submission/assets/images/pexels-peng-liu-169647.jpg);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
   position: relative;
   z-index: 2;
+  padding: var(--section-margin);
+  margin-bottom: var(--section-margin);
 }
-
-.hero::after {
+.main-about .hero .col {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.main-about .hero .col h1 {
+  margin-right: auto;
+  padding: 1rem 2rem;
+  color: var(--color-bg);
+}
+.main-about .hero .col p {
+  margin-left: auto;
+  padding: 1rem 2rem;
+  color: var(--color-bg);
+  font-size: var(--font-size-ms);
+}
+.main-about .hero::after {
   content: "";
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
+  background-color: rgba(20, 22, 22, 0.3);
+  z-index: -1;
+}
+.main-about .we-are-gbgwebdev .row {
+  gap: 1.5rem;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .main-about .we-are-gbgwebdev .row {
+    flex-direction: row;
+    padding-top: 1rem;
+  }
+}
+.main-about .we-are-gbgwebdev video {
+  width: 30rem;
+  box-shadow: var(--box-shadow);
+  content: cover;
+  padding: 0;
+  margin-block: auto;
+}
+.main-about .we-are-gbgwebdev article {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.main-about .we-are-gbgwebdev article button {
+  margin-top: 0.5rem;
+  -webkit-margin-end: auto;
+          margin-inline-end: auto;
+}
+.main-about .we-are-gbgwebdev article p {
+  margin-left: auto;
+  padding: 1rem 2rem;
+  font-size: var(--font-size-sm);
+}
+.main-about .we-are-gbgwebdev .expanded-img {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.main-about .we-are-gbgwebdev .expanded-img img {
+  max-height: 20rem;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  box-shadow: var(--box-shadow);
 }/*# sourceMappingURL=main.css.map */

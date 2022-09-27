@@ -11,13 +11,16 @@
     <meta name="author" content="Group6" />
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.css"
+    />
     <script defer src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="../styles/main.css" />
   </head>
-  <body class="body-about">
+  <body>
     <header>
       <nav class="navbar navbar-expand-lg">
         <div class="container">
@@ -54,60 +57,170 @@
         </div>
       </nav>
     </header>
-         <!--Hero section-->
-         <div class="hero vh-100 d-flex align-items-center">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-7">
-                <h1 class="display-4 text-white">About us</h1>
-                <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur auctor, arcu id mollis bibendum, tortor odio venenatis libero, id bibendum lectus felis at lacus. Maecenas id mauris convallis magna pellentesque congue. Quisque eget cursus est. Phasellus vel arcu sodales tortor suscipit volutpat. Vivamus sit amet porta quam, mollis ullamcorper ipsum.</p>
-                <a href="#" class="btn btn-primary">Contact us</a>
-                <a href="#" class="btn btn-outline-light">News</a>
+    <!--Hero section-->
+    <main class="main-about">
+      <section class="hero">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h1><span style="color: orange">A</span>bout us</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Curabitur auctor, arcu id mollis bibendum, tortor odio venenatis
+                libero, id bibendum lectus felis at lacus. Maecenas id mauris
+                convallis magna pellentesque congue. Quisque eget cursus est.
+                Phasellus vel arcu sodales tortor suscipit volutpat. Vivamus sit
+                amet porta quam, mollis ullamcorper ipsum.
+              </p>
+              <hr />
+              <a href="#" class="btn button-accent">Contact us</a>
+              <a href="#" class="btn button-accent">News</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--new section-->
+      <section class="we-are-gbgwebdev">
+        <div class="container">
+          <div class="row">
+            <div class="col order-2">
+              <video
+                src="/HTML-CSS-Coursework-Submission/assets/videos/video.mp4"
+                controls
+                autoplay
+              ></video>
+            </div>
+            <article class="col oder-1">
+              <h2>
+                <span style="color: orange">W</span>e are
+                <span style="color: orange">G</span>BG
+                <span style="color: orange">W</span>EBDEV
+              </h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
+                consequuntur earum aliquam optio aperiam! Deserunt inventore
+                quae ab praesentium vel et dolore dignissimos reiciendis,
+                similique voluptatibus! Debitis tempora fuga minima quisquam
+                doloremque!
+              </p>
+            
+              <button
+                class="btn button-accent"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseExample"
+                aria-expanded="false"
+                aria-controls="collapseExample"
+              >
+                Read More
+              </button>
+            </article>
+          </div>
+          <div class="row">
+            <article class="col">
+              <div class="collapse" id="collapseExample">
+                <h3>Innovation</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Suspendisse aliquet justo sed justo commodo, quis facilisis
+                  odio consequat. Morbi nec dolor quis nisl sollicitudin
+                  accumsan. Maecenas consectetur facilisis nisi id iaculis. Duis
+                  bibendum tellus et metus imperdiet, id mollis magna ultrices.
+                  Maecenas non blandit est, eget porttitor dui. Vestibulum a
+                  feugiat quam. Vivamus facilisis, arcu rutrum fringilla cursus,
+                  justo purus vehicula massa, quis consectetur ipsum risus eget
+                  nibh.
+                </p>
+                <h3>Co-Operation</h3>
+                <p>
+                  Cras id augue interdum, volutpat dolor eu, lobortis arcu.
+                  Mauris sed dui augue. Maecenas orci ex, vestibulum
+                  pellentesque malesuada a, dictum vel magna. Nulla placerat
+                  congue sapien, ut imperdiet magna sagittis at. Morbi faucibus
+                  arcu purus, sed dignissim tellus pellentesque vel. Ut lacus
+                  purus, dignissim quis pharetra at, congue quis lacus. In
+                  pharetra mauris eu eros ullamcorper elementum ut ac odio.
+                  Nullam vel mi vestibulum, porttitor dolor vel, facilisis
+                  felis. Nunc tellus nisi, cursus et convallis non, sodales non
+                  sapien. Vivamus consequat lorem sit amet justo tempus
+                  hendrerit. Praesent nec sem non ligula fringilla euismod.
+                </p>
+                <h3>Digital Ecosystems</h3>
+                <p>
+                  Nullam ut quam finibus, condimentum massa ac, scelerisque
+                  ipsum. Phasellus tempor faucibus pellentesque. Sed et risus in
+                  velit posuere hendrerit. Morbi vestibulum, massa ut iaculis
+                  volutpat, enim ipsum luctus sapien, ac vestibulum dolor ipsum
+                  a erat. Quisque ligula urna, volutpat ac ex quis, dignissim
+                  malesuada orci. Nullam in viverra augue, vel eleifend turpis.
+                  Suspendisse dolor ex, ornare eget metus sit amet, semper
+                  suscipit lacus. Quisque purus purus, malesuada ac orci et,
+                  elementum dignissim magna. Donec id lacus condimentum,
+                  vulputate sem at, interdum tortor.
+                </p>
+                <h3>Goals</h3>
+                <p>
+                  Nam sit amet sapien convallis, fermentum leo et, lobortis
+                  mauris. Cras euismod, lorem et imperdiet accumsan, elit metus
+                  rhoncus ex, sed aliquet turpis arcu nec erat. Donec
+                  vestibulum, eros at venenatis sollicitudin, nunc lacus
+                  interdum velit, ac dignissim turpis nunc ac mi. Phasellus id
+                  elit lorem. Duis blandit venenatis erat, eget tincidunt purus
+                  lobortis vel.
+                </p>
+              </div>
+            </article>
+            <div class="col expanded-img">
+              <div class="collapse" id="collapseExample">
+                <img src="../assets/images/pexels-fauxels-3184360.jpg">
+              </div>
+              <div class="collapse" id="collapseExample">
+                <img src="../assets/images/pexels-fauxels-3184359.jpg">
+              </div>
+              <div class="collapse" id="collapseExample">
+                <img src="../assets/images/pexels-fauxels-3182826.jpg">
               </div>
             </div>
           </div>
         </div>
-      </header>
-      <main>
-          <div class="container">About
-          <p> Hello world</p>
+      </section>
+      <section></section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-columns">
+          <div class="sitemap">
+            <h3>Sitemap</h3>
+            <hr />
+            <a class="nav-link" href="../index.html">Home</a>
+            <a class="nav-link" href="services.html">Services</a>
+            <a class="nav-link" href="news.html">News</a>
+            <a class="nav-link" href="pages/career.html">Career</a>
+            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link" href="contact.html">Contact</a>
           </div>
-          <footer class="footer">
-            <div class="container">
-              <div class="footer-columns">
-                <div class="sitemap">
-                  <h3>Sitemap</h3>
-                  <hr />
-                  <a class="nav-link" href="../index.html">Home</a>
-                  <a class="nav-link" href="services.html">Services</a>
-                  <a class="nav-link" href="news.html">News</a>
-                  <a class="nav-link" href="pages/career.html">Career</a>
-                  <a class="nav-link" href="about.html">About</a>
-                  <a class="nav-link" href="contact.html">Contact</a>
-                </div>
-                <div class="sitemap">
-                  <h3>Contact</h3>
-                  <hr />
-                  <p>GBG Webdev</p>
-                  <p>
-                    Mail to:
-                    <a href="mailto:info@gbgwebdev.com">info@gbgwebdev.com</a>
-                  </p>
-                </div>
-                <div class="sitemap">
-                  <h3>Follow us</h3>
-                  <hr />
-                  <a class="nav-link" href="https://linkedin.com/">LinkedIn</a>
-                  <a class="nav-link" href="https://facebook.com/">Facebook</a>
-                  <a class="nav-link" href="https://instagram.com/">Instagram</a>
-                  <a class="nav-link" href="https://github.com/">Github</a>
-                </div>
-              </div>
-              <div class="copyright">
-                <hr />
-                <p>© GBG/WEBDEV</p>
-              </div>
-            </div>
-      </footer>
+          <div class="sitemap">
+            <h3>Contact</h3>
+            <hr />
+            <p>GBG Webdev</p>
+            <p>
+              Mail to:
+              <a href="mailto:info@gbgwebdev.com">info@gbgwebdev.com</a>
+            </p>
+          </div>
+          <div class="sitemap">
+            <h3>Follow us</h3>
+            <hr />
+            <a class="nav-link" href="https://linkedin.com/">LinkedIn</a>
+            <a class="nav-link" href="https://facebook.com/">Facebook</a>
+            <a class="nav-link" href="https://instagram.com/">Instagram</a>
+            <a class="nav-link" href="https://github.com/">Github</a>
+          </div>
+        </div>
+        <div class="copyright">
+          <hr />
+          <p>© GBG/WEBDEV</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
