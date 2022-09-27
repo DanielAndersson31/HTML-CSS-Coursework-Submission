@@ -35,13 +35,12 @@
         height: 0.2rem;
         border-radius: 50rem;
         background-color: var(--color-bg);
-        transition: transform var(--time) ease, width var(--time) ease,
-          opacity var(--time) ease;
+        transition: transform var(--time) ease, width var(--time) ease, opacity var(--time) ease;
       }
     }
   }
 
-  .open-burger {
+  .navbar-toggler[aria-expanded="true"] {
     .burger div {
       &:nth-child(1) {
         transform: translateY(0.5rem) rotate(45deg);
