@@ -293,18 +293,19 @@ body {
 .services-cover-text {
   color: white;
   position: absolute;
-  top: 5%;
+  top: 20%;
   left: 20%;
 }
 
 #services-h2 {
-  margin-top: 3rem;
-  margin-left: 4rem;
+  margin-top: 2%;
+  margin-left: 2%;
 }
 
 .services-gallery {
   float: left;
   margin-top: 2rem;
+  margin-bottom: 2rem;
   width: 25%;
 }
 
@@ -336,8 +337,33 @@ body {
     width: 50%;
   }
 }
-@media only screen and (width: 768pxpx) {
-  .services-cover-text {
-    width: 100%;
+.services-cards {
+  display: flex;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.services-cards img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media only screen and (max-width: 1000px) {
+  .services-cards {
+    width: 80%;
   }
+}
+.services-end img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 35rem;
+}
+
+.services-end-text {
+  color: rgb(0, 0, 0);
+  position: absolute;
+  left: 70%;
+  bottom: 40%;
 }/*# sourceMappingURL=main.css.map */
