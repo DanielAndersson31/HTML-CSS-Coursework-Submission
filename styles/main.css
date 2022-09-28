@@ -505,15 +505,12 @@ body {
 #windowgirl {
   width: 100%;
   height: auto;
-  max-width: 550px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 #worldmap {
   width: 100%;
   height: auto;
-  -o-object-fit: contain;
-     object-fit: contain;
   border-radius: 5px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
@@ -524,18 +521,18 @@ body {
 }
 
 #applybtn:hover {
-  opacity: 50%;
   background-color: var(--color-accent);
+  transition: ease-in-out 0.5s;
 }
 
 .career-header {
   height: 40rem;
   background-image: linear-gradient(to right bottom, var(--color-accent), rgba(0, 38, 90, 0.5)), url("/assets/images/pexels-negative-space-169573.jpg");
   background-size: cover;
-  background-position: top;
+  background-position: bottom;
   position: relative;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 50vh, 0 100%);
-          clip-path: polygon(0 0, 100% 0, 100% 50vh, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
 }
 
 .brand-box {
@@ -584,8 +581,8 @@ body {
   background-size: cover;
   background-position: top;
   position: relative;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 50vh, 0 100%);
-          clip-path: polygon(0 0, 100% 0, 100% 50vh, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
 }
 
 .brand-box {
@@ -745,6 +742,21 @@ body {
   border-left: none;
 }
 .news-subscription form button:hover {
+  background-color: var(--color-accent-dark);
+}
+
+form {
+  width: 100%;
+}
+form input {
+  border: 3px solid var(--color-accent-dark);
+  box-shadow: none;
+}
+form button {
+  border: 3px solid var(--color-accent-dark);
+  border-left: none;
+}
+form button:hover {
   background-color: var(--color-accent-dark);
 }
 
