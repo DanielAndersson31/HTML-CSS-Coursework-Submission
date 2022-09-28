@@ -532,8 +532,8 @@ body {
   background-size: cover;
   background-position: bottom;
   position: relative;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 50vh, 0 100%);
-          clip-path: polygon(0 0, 100% 0, 100% 50vh, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
 }
 
 .brand-box {
@@ -582,8 +582,8 @@ body {
   background-size: cover;
   background-position: top;
   position: relative;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 50vh, 0 100%);
-          clip-path: polygon(0 0, 100% 0, 100% 50vh, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
 }
 
 .brand-box {
