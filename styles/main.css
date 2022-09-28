@@ -736,21 +736,6 @@ body {
   background-color: var(--color-accent-dark);
 }
 
-form {
-  width: 100%;
-}
-form input {
-  border: 3px solid var(--color-accent-dark);
-  box-shadow: none;
-}
-form button {
-  border: 3px solid var(--color-accent-dark);
-  border-left: none;
-}
-form button:hover {
-  background-color: var(--color-accent-dark);
-}
-
 .btn-more,
 .btn-newslink,
 .btn-back {
