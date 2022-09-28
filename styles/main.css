@@ -780,4 +780,104 @@ body {
   justify-content: center;
   padding: 2rem;
   margin-top: 3rem;
+}
+
+.contact-main .main-content {
+  background-image: linear-gradient(rgba(97, 11, 236, 0.3), rgba(11, 25, 155, 0.3)), url("/assets/images/Contact-Support.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+.contact-main .main-content h1,
+.contact-main .main-content h3 {
+  padding: 1rem;
+  color: white;
+  font-weight: lighter;
+}
+.contact-main .main-content h1 {
+  border-bottom: 3px solid rgb(255, 255, 255);
+}
+.contact-main .contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 5rem;
+  flex-basis: 1 1 20rem;
+}
+.contact-main .contact-container div {
+  flex: 1 1 30rem;
+  max-width: 40rem;
+}
+.contact-main .contact-info {
+  text-align: center;
+}
+.contact-main .contact-info div {
+  padding: 3rem;
+}
+.contact-main .contact-info div * {
+  padding: 1rem;
+}
+.contact-main .contact-info div i {
+  color: var(--color-accent);
+  font-size: 2rem;
+  align-self: center;
+}
+.contact-main .container-contact-form {
+  display: flex;
+  padding: 2rem;
+}
+.contact-main .contact-container {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+.contact-main .sales-item h4,
+.contact-main .support-item h4 {
+  color: var(--color-accent);
+}
+.contact-main .contact-form h2 {
+  padding: 1rem;
+  text-align: center;
+}
+.contact-main .btn {
+  background-color: var(--color-accent);
+  border: none;
+}
+.contact-main .btn:hover {
+  background-color: rgba(218, 120, 0, 0.8) !important;
+}
+.contact-main .questions-and-answers {
+  text-align: center;
+}
+.contact-main .questions-and-answers h1,
+.contact-main h2 {
+  padding: 1rem;
+  color: var(-color-accent-dark);
+}
+.contact-main .questions-and-answers img {
+  width: 100%;
+  max-height: 40rem;
+  box-shadow: 2px 4px 10px 3px rgba(32, 32, 32, 0.2);
+}
+.contact-main .accordion-button {
+  box-shadow: none !important;
+  background-color: white !important;
+  border-radius: 5px;
+}
+.contact-main .accordion-button[aria-expanded=true] {
+  color: white !important;
+  background-color: var(--color-accent-dark) !important;
+}
+.contact-main .accordion-button::after {
+  filter: brightness(1000);
+}
+.contact-main .accordion-body {
+  padding-top: 0;
 }/*# sourceMappingURL=main.css.map */
