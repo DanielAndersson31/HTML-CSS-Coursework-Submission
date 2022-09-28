@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>GBG WEBDEV</title>
-    <meta name="keywords" content="" />
-    <meta name="description" content="" />
-    <meta name="author" content="Group6" />
+    <title>GBG\WEBDEV | Contact</title>
+    <meta name="keywords" content="Contact, Help, technical advice, sales, salesperson, " />
+    <meta name="description" content="GBG\WEBDEV contact us for more information regarding our services or" />
+    <meta name="author" content="Group6 - Daniel Andersson" />
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css" />
@@ -42,12 +42,11 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ms-auto">
-              <!-- Don't forget to add 'aria-current="page"' and class 'active' -->
-              <a class="nav-link" href="/pages/services.html">Services</a>
-              <a class="nav-link" href="/pages/news.html">News</a>
-              <a class="nav-link" href="/pages/career.html">Career</a>
-              <a class="nav-link" href="/pages/about.html">About</a>
-              <a class="nav-link" href="/pages/contact.html">Contact</a>
+              <a class="nav-link" href="/pages/services.html" title="Go to services">Services</a>
+              <a class="nav-link" href="/pages/news.html" title="Go to news">News</a>
+              <a class="nav-link" href="/pages/career.html" title="Go to career">Career</a>
+              <a class="nav-link" href="/pages/about.html" title="Go to about">About</a>
+              <a class="nav-link" href="/pages/contact.html" title="Go to contact" aria-current="contact">Contact</a>
             </div>
           </div>
         </div>
@@ -157,7 +156,7 @@
         <div class="questions-and-answers">
           <h2>Frequently Asked Questions</h2>
           <div>
-            <img src="/assets/images//Q-A.png" alt="questions and answers" />
+            <img src="../assets/images//Q-A.png" alt="questions and answers" />
           </div>
         </div>
 
@@ -166,11 +165,11 @@
             <div class="accordion-item">
               <h2 class="accordion-header" id="panelsStayOpen-headingOne">
                 <button
-                  class="accordion-button"
+                  class="accordion-button collapsed"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#panelsStayOpen-collapseOne"
-                  aria-expanded="true"
+                  aria-expanded="false"
                   aria-controls="panelsStayOpen-collapseOne"
                 >
                   What’s my password—I’ve forgotten it. Can you tell me what it is?
@@ -178,7 +177,7 @@
               </h2>
               <div
                 id="panelsStayOpen-collapseOne"
-                class="accordion-collapse collapse show"
+                class="accordion-collapse collapse"
                 aria-labelledby="panelsStayOpen-headingOne"
               >
                 <div class="accordion-body">
@@ -398,8 +397,42 @@
         </div>
       </section>
     </main>
-    <footer class="bg-light">
-      <div class="container">footer content</div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-columns">
+          <div class="sitemap">
+            <h3>Sitemap</h3>
+            <hr />
+            <a class="nav-link" href="../index.html" title="Link to homepage">Home</a>
+            <a class="nav-link" href="services.html" title="Link to services">Services</a>
+            <a class="nav-link" href="news.html" title="Link to news">News</a>
+            <a class="nav-link" href="career.html" title="Link to career">Career</a>
+            <a class="nav-link" href="about.html" title="Link to about">About</a>
+            <a class="nav-link" href="contact.html" title="Link to contact">Contact</a>
+          </div>
+          <div class="sitemap">
+            <h3>Contact</h3>
+            <hr />
+            <p>GBG Webdev</p>
+            <p>
+              Mail to:
+              <a href="mailto:info@gbgwebdev.com">info@gbgwebdev.com</a>
+            </p>
+          </div>
+          <div class="sitemap">
+            <h3>Follow us</h3>
+            <hr />
+            <a class="nav-link" href="https://linkedin.com/" title="Link to LinkedIn">LinkedIn</a>
+            <a class="nav-link" href="https://facebook.com/" title="Link to Facebook">Facebook</a>
+            <a class="nav-link" href="https://instagram.com/" title="Link to Instagram">Instagram</a>
+            <a class="nav-link" href="https://github.com/" title="Link to Github">Github</a>
+          </div>
+        </div>
+        <div class="copyright">
+          <hr />
+          <p>© GBG/WEBDEV</p>
+        </div>
+      </div>
     </footer>
   </body>
 </html>

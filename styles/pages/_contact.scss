@@ -9,56 +9,52 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60vh;
+    height: 40rem;
     flex-direction: column;
     margin-bottom: 2rem;
+
+    h1,
+    h3 {
+      padding: 1rem;
+      color: white;
+      font-weight: lighter;
+    }
+    h1 {
+      border-bottom: 3px solid rgb(255, 255, 255);
+    }
   }
 
-  .main-content h1,
-  .main-content h3 {
-    padding: 1rem;
-    color: white;
-    font-weight: lighter;
-  }
-  .main-content h1 {
-    border-bottom: 3px solid rgb(255, 255, 255);
-  }
   .contact-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    padding: 2rem;
     gap: 5rem;
     flex-basis: 1 1 20rem;
-  }
-  .contact-container div {
-    flex: 1 1 30rem;
-    max-width: 40rem;
+    div {
+      flex: 1 1 30rem;
+      max-width: 40rem;
+    }
   }
 
   .contact-info {
     text-align: center;
-  }
-  .contact-info div {
-    padding: 3rem;
-  }
-  .contact-info div * {
-    padding: 1rem;
-  }
-
-  .contact-info div i {
-    color: var(--color-accent);
-    font-size: 2rem;
-    align-self: center;
+    div {
+      padding: 3rem;
+      * {
+        padding: 1rem;
+      }
+      i {
+        color: var(--color-accent);
+        font-size: 2rem;
+        align-self: center;
+      }
+    }
   }
 
   .container-contact-form {
     display: flex;
-    padding: 2rem;
-  }
-  .contact-container {
-    display: flex;
-    justify-content: center;
     padding: 2rem;
   }
 
@@ -81,16 +77,16 @@
   }
   .questions-and-answers {
     text-align: center;
-  }
-  .questions-and-answers h1,
-  h2 {
-    padding: 1rem;
-    color: var(-color-accent-dark);
-  }
-  .questions-and-answers img {
-    width: 100%;
-    max-height: 40rem;
-    box-shadow: 2px 4px 10px 3px rgba(32, 32, 32, 0.2);
+    h1,
+    h2 {
+      padding: 1rem;
+      color: var(-color-accent-dark);
+    }
+    img {
+      width: 100%;
+      max-height: 40rem;
+      box-shadow: 2px 4px 10px 3px rgba(32, 32, 32, 0.2);
+    }
   }
   .accordion-button {
     box-shadow: none !important;
@@ -107,5 +103,20 @@
   }
   .accordion-body {
     padding-top: 0;
+  }
+}
+.form-control {
+  &:focus {
+    box-shadow: 0px 0px 3px var(--color-accent);
+  }
+  &:focus-visible {
+    border-color: var(--color-accent);
+  }
+}
+.form-select {
+  &:focus {
+    box-shadow: none;
+    box-shadow: 0px 0px 3px var(--color-accent);
+    border-color: var(--color-accent) !important;
   }
 }

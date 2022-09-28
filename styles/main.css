@@ -765,7 +765,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60vh;
+  height: 40rem;
   flex-direction: column;
   margin-bottom: 2rem;
 }
@@ -781,8 +781,9 @@ body {
 .contact-main .contact-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
+  padding: 2rem;
   gap: 5rem;
   flex-basis: 1 1 20rem;
 }
@@ -808,11 +809,6 @@ body {
   display: flex;
   padding: 2rem;
 }
-.contact-main .contact-container {
-  display: flex;
-  justify-content: center;
-  padding: 2rem;
-}
 .contact-main .sales-item h4,
 .contact-main .support-item h4 {
   color: var(--color-accent);
@@ -832,7 +828,7 @@ body {
   text-align: center;
 }
 .contact-main .questions-and-answers h1,
-.contact-main h2 {
+.contact-main .questions-and-answers h2 {
   padding: 1rem;
   color: var(-color-accent-dark);
 }
@@ -855,4 +851,17 @@ body {
 }
 .contact-main .accordion-body {
   padding-top: 0;
+}
+
+.form-control:focus {
+  box-shadow: 0px 0px 3px var(--color-accent);
+}
+.form-control:focus-visible {
+  border-color: var(--color-accent);
+}
+
+.form-select:focus {
+  box-shadow: none;
+  box-shadow: 0px 0px 3px var(--color-accent);
+  border-color: var(--color-accent) !important;
 }/*# sourceMappingURL=main.css.map */
