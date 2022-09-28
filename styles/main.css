@@ -630,7 +630,7 @@ body {
 }
 
 .news-main {
-  --article-width: 25rem;
+  --article-width: 26.5rem;
   --border-radius: 0;
   display: flex;
   flex-direction: column;
@@ -659,8 +659,9 @@ body {
   display: flex;
   flex-wrap: wrap;
   padding-top: 1rem;
-  padding-left: 1rem;
-  gap: 2rem;
+  padding-left: 0;
+  padding-right: 0;
+  gap: 1.5rem;
   justify-content: left;
   flex-direction: column;
 }
@@ -675,6 +676,7 @@ body {
   height: auto;
   width: var(--article-width);
   border-radius: var(--border-radius);
+  padding: 0;
 }
 .news-card .zoom {
   width: var(--article-width);
