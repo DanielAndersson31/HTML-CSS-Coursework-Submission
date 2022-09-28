@@ -24,15 +24,8 @@
     <nav class="navbar navbar-expand-lg">
       <div class="container">
         <a href="../index.html" aria-current="page" class="navbar-brand">GBG/WEBDEV</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <!-- <span class="navbar-toggler-icon"></span> -->
           <span class="burger">
             <div></div>
@@ -54,15 +47,15 @@
     </nav>
   </header>
 
-  <main class="news">
-    <div class="news-hero"></div>
+  <main class="news-main">
+    <section class="news-hero"></section>
     <section class="news-title">
       <h1>The best way to enjoy your coffe!</h1>
       <p>Latest news from us!</p>
     </section>
 
     <div class="container news-container">
-      <div class="card shadow">
+      <div class="card article-card shadow">
         <a href="news-pages/article-release.html">
           <div class="zoom">
             <img src="../assets/images/release2.jpg" class="card-img-top"
@@ -71,10 +64,11 @@
           <div class="card-body">
             <h5>Final week before release!</h5>
           </div>
+          <time datetime="2022-09-26">2022-09-26</time>
         </a>
-        <time datetime="2022-09-26">2022-09-26</time>
       </div>
-      <div class="card shadow">
+
+      <div class="card article-card shadow">
         <a href="news-pages/article-meetup.html">
           <div class="zoom">
             <img src="../assets/images/computer.jpg" class="card-img-top"
@@ -98,7 +92,7 @@
         </a>
         <time datetime="2022-09-19">2022-09-19</time>
       </div>
-      
+
       <!--Load More Funktion ( Old articles )-->
 
       <div class="collapse" id="collapsnews">
@@ -167,8 +161,8 @@
     </div>
 
     <div class="btn-more">
-      <button class="button-inverse active collapsed"  type="button" data-bs-toggle="collapse"
-        data-bs-target="#collapsnews" aria-expanded="false" aria-controls="collapseExample" aria-pressed="true">
+      <button class="button-inverse active collapsed" type="button" data-bs-toggle="collapse"
+        data-bs-target="#collapsnews" >
         Load more GBG/WEBDEV news!
       </button>
     </div>

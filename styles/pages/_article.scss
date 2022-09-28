@@ -1,0 +1,30 @@
+.article-main {
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}   
+
+
+.img-container {
+    @include news-basestyle();
+    height: 20rem;
+
+    img {
+        margin-top: 1rem;
+        @include news-basestyle();
+        object-fit: cover;
+    }    
+}  
+
+.article-nav {
+    padding: 1rem;
+}
+
+
+.news-article {
+    @include news-basestyle();
+    flex-direction: column;
+    padding-left: 2rem;
+    margin-bottom: 2rem;
+} 
