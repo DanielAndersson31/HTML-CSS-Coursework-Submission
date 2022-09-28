@@ -630,9 +630,20 @@ body {
 }
 
 .news-main {
+  background-color: aqua;
+  --border-radius: 0;
+  --article-width: 25rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.news-hero {
+  background-image: url(../../assets/images/readme.jpg);
+  height: 40rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .news-title {
@@ -645,20 +656,6 @@ body {
   padding: 0.5rem;
 }
 
-.news-hero {
-  background-image: url(../../assets/images/readme.jpg);
-  height: 40rem;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.hero-text h1 {
-  color: var(--color-bg-alt);
-  top: 15rem;
-  left: 5rem;
-}
-
 .news-container {
   display: flex;
   flex-wrap: wrap;
@@ -668,65 +665,31 @@ body {
   justify-content: left;
   flex-direction: column;
 }
-.news-container .card {
+
+.article-card {
+  width: var(--article-width);
+  border-radius: var(--border-radius);
   overflow: hidden;
   height: auto;
-  width: 25rem;
-  border-radius: 0;
 }
-.news-container .card time {
-  font-size: var(--font-size-xs);
-  padding: 0.5rem;
-  margin-left: 0.5rem;
-}
-
-.article-nav {
-  padding: 1rem;
-}
-
-.img-container {
-  display: flex;
-  padding-left: 0;
-  padding-right: 0;
-  height: 20rem;
-}
-.img-container img {
-  margin-top: 1rem;
-  display: flex;
-  padding-left: 0;
-  padding-right: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.news-article {
-  display: flex;
-  padding-left: 0;
-  padding-right: 0;
-  flex-direction: column;
-  padding-left: 2rem;
-  margin-bottom: 2rem;
-}
-
-.zoom {
-  width: 25rem;
+.article-card .zoom {
+  width: var(--article-width);
   height: 17rem;
   overflow: hidden;
 }
-.zoom img {
-  border-radius: 0;
-  width: 25rem;
+.article-card .zoom img {
+  width: var(--article-width);
+  border-radius: var(--border-radius);
   height: 17rem;
   transition: 1s all ease-in-out;
 }
-.zoom img:hover {
+.article-card .zoom img:hover {
   transform: scale(1.1);
 }
-
-.card-body h5 {
+.article-card .card-body h5 {
   transition: 0.4s;
 }
-.card-body h5:hover {
+.article-card .card-body h5:hover {
   color: var(--color-accent);
 }
 
