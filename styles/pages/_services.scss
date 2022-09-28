@@ -11,7 +11,7 @@
 .services-cover-text {
     color: white;
     position: absolute;
-    top: 20%;
+    top: 30%;
     left: 20%;
 }
 
@@ -20,7 +20,7 @@
 }
 
 .services-cover-button {
-    margin: 2rem;
+    margin: 1rem;
 }
 
 #services-h2 {
@@ -70,14 +70,13 @@
 }
 
 .services-cards {
-    margin: 2%;
-    height: 100%;
+    margin-left: 2%;
 }
 
 .services-cards img {
     object-fit: cover;
     width: 100%;
-    
+    height: auto;  
 }
 
 @media only screen and (max-width: 1000px) {
@@ -97,15 +96,15 @@
 }
 
 .services-end-text h4 {
-    margin: 1rem;
+    margin: 2rem;
 }
 
 .services-end-text a {
-    margin: 2rem;
+    margin-left: 4rem;
 }
 
 .services-end-text {
     position: absolute;
-    bottom: 20%;
-    right: 10%;
+    bottom: 30%;
+    right: 20%;
 }
