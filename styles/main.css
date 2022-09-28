@@ -663,34 +663,6 @@ body {
   flex-direction: column;
 }
 
-.article-nav {
-  padding: 1rem;
-}
-
-.img-container {
-  display: flex;
-  padding-left: 0;
-  padding-right: 0;
-  height: 20rem;
-}
-.img-container img {
-  margin-top: 1rem;
-  display: flex;
-  padding-left: 0;
-  padding-right: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.news-article {
-  display: flex;
-  padding-left: 0;
-  padding-right: 0;
-  flex-direction: column;
-  padding-left: 2rem;
-  margin-bottom: 2rem;
-}
-
 .news-card {
   overflow: hidden;
   height: auto;
@@ -775,6 +747,36 @@ body {
   margin-top: 3rem;
 }
 
+/***** Article *****/
+.articleimg-container {
+  display: flex;
+  padding-left: 0;
+  padding-right: 0;
+  height: 20rem;
+}
+.articleimg-container img {
+  margin-top: 1rem;
+  display: flex;
+  padding-left: 0;
+  padding-right: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.article-nav {
+  padding: 1rem;
+}
+
+.article-news {
+  display: flex;
+  padding-left: 0;
+  padding-right: 0;
+  flex-direction: column;
+  padding-left: 2rem;
+  margin-bottom: 2rem;
+}
+
+/***** End Article *****/
 .contact-main .main-content {
   background-image: linear-gradient(rgba(97, 11, 236, 0.3), rgba(11, 25, 155, 0.3)), url("/assets/images/Contact-Support.jpg");
   background-size: cover;

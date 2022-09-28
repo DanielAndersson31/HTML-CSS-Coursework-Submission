@@ -1,27 +1,14 @@
-$border-radius: 0;
-$article-width: 25rem;
-
-@mixin news-basestyle {
-    display: flex;
-    padding-left: 0;
-    padding-right: 0;
-}
-
 .news-main {
+    --article-width: 25rem;
+    --border-radius: 0;
+    @mixin news-basestyle {
+        display: flex;
+        padding-left: 0;
+        padding-right: 0;
+    }
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-.news-title {
-    text-align: center;
-    padding: 4rem;
-    margin-bottom: 2rem;
-
-    p {
-        font-style: italic;
-        padding: 0.5rem;
-    }
 }
 
 .news-hero {
@@ -30,6 +17,16 @@ $article-width: 25rem;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.news-title {
+    text-align: center;
+    padding: 4rem;
+    margin-bottom: 2rem;
+    p {
+        font-style: italic;
+        padding: 0.5rem;
+    }
 }
 
 .news-container {
@@ -42,26 +39,10 @@ $article-width: 25rem;
     flex-direction: column;
 }
 
-.article-nav {
-    padding: 1rem;
-}
-
-.img-container {
-    @include news-basestyle();
-    height: 20rem;
-
-    img {
-        margin-top: 1rem;
-        @include news-basestyle();
-        object-fit: cover;
+@media (min-width: 62rem) {
+    .news-container {
+        flex-direction: row;
     }
-}
-
-.news-article {
-    @include news-basestyle();
-    flex-direction: column;
-    padding-left: 2rem;
-    margin-bottom: 2rem;
 }
 
 .news-card {
@@ -69,45 +50,33 @@ $article-width: 25rem;
     height: auto;
     width: $article-width;
     border-radius: $border-radius;
+    .zoom {
+        width: $article-width;
+        height: 17rem;
+        overflow: hidden; 
+        img {
+            border-radius: $border-radius;
+            width: $article-width;
+            height: 17rem;
+            transition: 1s all ease-in-out;
+        }        
+        img:hover {
+            transform: scale(1.1);
+        }
+    }   
 
+    .card-body {       
+        h5 {
+            transition: 0.4s;
+        }
+        h5:hover {
+            color: var(--color-accent);
+        }
+    }
     time {
         font-size: var(--font-size-xs);
         padding: 0.5rem;
         margin-left: 0.5rem;
-    }
-}
-
-.zoom {
-    width: $article-width;
-    height: 17rem;
-    overflow: hidden;
-
-    img {
-        border-radius: $border-radius;
-        width: $article-width;
-        height: 17rem;
-        transition: 1s all ease-in-out;
-    }
-
-    img:hover {
-        transform: scale(1.1);
-    }
-}
-
-.card-body {
-
-    h5 {
-        transition: 0.4s;
-    }
-
-    h5:hover {
-        color: var(--color-accent);
-    }
-}
-
-@media (min-width: 62rem) {
-    .news-container {
-        flex-direction: row;
     }
 }
 
@@ -118,22 +87,18 @@ $article-width: 25rem;
     align-items: center;
     gap: 1rem;
     line-height: 1.5;
-
     @media screen and (min-width: 768px) {
         flex-direction: row;
     }
-
     p {
         text-align: center;
-
+        
         @media screen and (min-width: 768px) {
             text-align: end;
         }
     }
-
     form {
         width: 100%;
-
         input {
             border: 3px solid var(--color-accent-dark);
             box-shadow: none;
@@ -156,3 +121,26 @@ $article-width: 25rem;
     padding: 2rem;
     margin-top: 3rem;
 }
+
+/***** Article *****/
+.articleimg-container {
+    @include news-basestyle();
+    height: 20rem; 
+    img {
+        margin-top: 1rem;
+        @include news-basestyle();
+        object-fit: cover;
+    }
+}
+
+.article-nav {
+    padding: 1rem;
+}
+
+.article-news {
+    @include news-basestyle();
+    flex-direction: column;
+    padding-left: 2rem;
+    margin-bottom: 2rem;
+}
+/***** End Article *****/
