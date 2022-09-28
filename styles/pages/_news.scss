@@ -7,7 +7,7 @@ $article-width: 25rem;
     padding-right: 0;
 }
 
-.news {
+.news-main {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -72,7 +72,7 @@ $article-width: 25rem;
     margin-bottom: 2rem;
 }
 
-.card {
+.news-card {
     overflow: hidden;
     height: auto;
     width: $article-width;

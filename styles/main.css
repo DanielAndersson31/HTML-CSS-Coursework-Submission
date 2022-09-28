@@ -629,7 +629,7 @@ body {
   letter-spacing: 7.4px;
 }
 
-.news {
+.news-main {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -697,13 +697,13 @@ body {
   margin-bottom: 2rem;
 }
 
-.card {
+.news-card {
   overflow: hidden;
   height: auto;
   width: 25rem;
   border-radius: 0;
 }
-.card time {
+.news-card time {
   font-size: var(--font-size-xs);
   padding: 0.5rem;
   margin-left: 0.5rem;
