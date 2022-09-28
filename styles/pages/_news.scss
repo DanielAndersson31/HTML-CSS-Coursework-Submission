@@ -83,9 +83,9 @@
 
 
 @media (min-width: 62rem) {
-    .news-container {
-        flex-direction: row;
-    }
+  .news-container {
+    flex-direction: row;
+  }
 }
 
 .news-subscription {
@@ -96,17 +96,17 @@
     gap: 1rem;
     line-height: 1.5;
 
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
+
+  p {
+    text-align: center;
+
     @media screen and (min-width: 768px) {
-        flex-direction: row;
+      text-align: end;
     }
-
-    p {
-        text-align: center;
-
-        @media screen and (min-width: 768px) {
-            text-align: end;
-        }
-    }
+  }
 
     form {
         width: 100%;
@@ -128,8 +128,8 @@
 .btn-more,
 .btn-newslink,
 .btn-back {
-    display: flex;
-    justify-content: center;
-    padding: 2rem;
-    margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  margin-top: 3rem;
 }
