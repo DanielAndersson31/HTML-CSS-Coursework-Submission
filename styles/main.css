@@ -320,7 +320,7 @@ body {
 .services-gallery-content {
   border: 1px solid rgb(190, 190, 190);
   border-radius: 2%;
-  margin: 2%;
+  margin: 4%;
 }
 
 .services-gallery-content:hover {
@@ -347,12 +347,11 @@ body {
 }
 .services-cards-container {
   display: flex;
-  justify-content: center;
   margin-bottom: 2%;
 }
 
 .services-cards {
-  margin: 2%;
+  margin: 1%;
 }
 
 .services-cards img {
