@@ -47,20 +47,20 @@
 }
 
 .services-cards {
-    display: flex;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    width: 80%;
+    float: left;
 
+    width: 33.33%;
 }
 .services-cards img {
     object-fit: cover;
-    width: 100%;
-    height: auto;
+}
+@media only screen and (max-width: 1000px) {
+    .services-cards {
+      width: 100%;
+    }
 }
 .services-end img {
     object-fit: cover;
-    margin-top: 2rem;
     width: 100%;
     height: 35rem;
 }
