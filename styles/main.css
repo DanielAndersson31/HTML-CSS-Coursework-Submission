@@ -653,12 +653,6 @@ body {
   background-size: cover;
 }
 
-.hero-text h1 {
-  color: var(--color-bg-alt);
-  top: 15rem;
-  left: 5rem;
-}
-
 .news-container {
   display: flex;
   flex-wrap: wrap;
