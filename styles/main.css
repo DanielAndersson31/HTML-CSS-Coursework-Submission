@@ -372,8 +372,16 @@ body {
   height: 20rem;
 }
 
+.services-end-text h4 {
+  margin: 1rem;
+}
+
+.services-end-text a {
+  margin: 1rem;
+}
+
 .services-end-text {
   position: absolute;
-  top: 60%;
-  left: 40%;
+  top: 5%;
+  right: 20%;
 }/*# sourceMappingURL=main.css.map */
