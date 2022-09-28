@@ -2,136 +2,135 @@ $border-radius: 0;
 $article-width: 25rem;
 
 @mixin news-basestyle {
-    display: flex;
-    padding-left: 0;
-    padding-right: 0;
+  display: flex;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .news-hero {
-    background-image: url(../../assets/images/readme.jpg);
-    height: 40rem;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-align: center;
-    position: relative;
+  background-image: url(../../assets/images/readme.jpg);
+  height: 40rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  position: relative;
 }
 
 .hero-text {
-    h1 {
-        color: var(--color-bg-alt);
-        top: 15rem;
-        left: 5rem;
-    }
+  h1 {
+    color: var(--color-bg-alt);
+    top: 15rem;
+    left: 5rem;
+  }
 }
 
-
 .news-container {
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 1rem;
-    gap: 2rem;
-    justify-content: left;
-    flex-direction: column;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 1rem;
+  gap: 2rem;
+  justify-content: left;
+  flex-direction: column;
 }
 
 .article-nav {
-    padding: 1rem;
+  padding: 1rem;
 }
 
 .img-container {
-    @include news-basestyle();
-    height: 20rem;
+  @include news-basestyle();
+  height: 20rem;
 
-    img {
-        @include news-basestyle();
-        object-fit: cover;
-    }
+  img {
+    @include news-basestyle();
+    object-fit: cover;
+  }
 }
 
 .news-article {
-    @include news-basestyle();
-    padding: 2rem;
-    margin-top: 2rem;
-    flex-direction: column;
+  @include news-basestyle();
+  padding: 2rem;
+  margin-top: 2rem;
+  flex-direction: column;
 }
 
 .card {
-    overflow: hidden;
-    height: auto;
-    width: $article-width;
-    border-radius: $border-radius;
+  overflow: hidden;
+  height: auto;
+  width: $article-width;
+  border-radius: $border-radius;
 
-    time {
-        font-size: var(--font-size-xs);
-        padding: 0.5rem;
-        margin-left: 0.5rem;
-    }
+  time {
+    font-size: var(--font-size-xs);
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+  }
 }
 
 .zoom {
+  width: $article-width;
+  height: 17rem;
+  overflow: hidden;
+
+  img {
+    border-radius: $border-radius;
     width: $article-width;
     height: 17rem;
-    overflow: hidden;
+    transition: 1s all ease-in-out;
+  }
 
-    img {
-        border-radius: $border-radius;
-        width: $article-width;
-        height: 17rem;
-        transition: 1s all ease-in-out;
-    }
-
-    img:hover {
-        transform: scale(1.1);
-    }
+  img:hover {
+    transform: scale(1.1);
+  }
 }
 
 @media (min-width: 62rem) {
-    .news-container {
-        flex-direction: row;
-    }
+  .news-container {
+    flex-direction: row;
+  }
 }
 
 .news-subscription {
-    margin-top: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    line-height: 1;
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  line-height: 1;
 
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
+
+  p {
+    text-align: center;
     @media screen and (min-width: 768px) {
-        flex-direction: row;
+      text-align: end;
     }
+  }
 
-    p {
-        text-align: center;
-        @media screen and (min-width: 768px) {
-            text-align: end;
+  form {
+    width: 100%;
+    input {
+      border: 3px solid var(--color-accent-dark);
+      box-shadow: none;
+
+      button {
+        border: 3px solid var(--color-accent-dark);
+        border-left: none;
+        &:hover {
+          background-color: var(--color-accent-dark);
         }
+      }
     }
+  }
 
-    form {
-        width: 100%;
-        input {
-            border: 3px solid var(--color-accent-dark);
-            box-shadow: none;
-        
-         button {
-            border: 3px solid var(--color-accent-dark);
-            border-left: none;
-            &:hover {
-                background-color: var(--color-accent-dark);
-            }
-        }
-    }
-
-}
-
-.btn-more,
-.btn-back {
+  .btn-more,
+  .btn-back {
     display: flex;
     justify-content: center;
     padding: 2rem;
     margin-top: 3rem;
+  }
 }
