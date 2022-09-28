@@ -352,14 +352,21 @@ body {
 }
 
 .services-cards {
-  margin: 2rem;
+  margin: 2%;
+  height: 100%;
 }
 
 .services-cards img {
   -o-object-fit: cover;
      object-fit: cover;
+  width: 100%;
 }
 
+@media only screen and (max-width: 1000px) {
+  .services-cards-container {
+    flex-direction: column;
+  }
+}
 .services-end {
   position: relative;
 }
