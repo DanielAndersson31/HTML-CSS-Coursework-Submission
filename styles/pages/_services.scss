@@ -63,20 +63,19 @@
     }
 }
 
-.services-cards {
-    float: left;
-    width: 33.33%;
+.services-cards-container {
+    display: flex;
+    justify-content: center;
     margin-bottom: 2%;
+}
+.services-cards {
+    margin: 2rem;
+    width: 30%;
+ 
 }
 
 .services-cards img {
     object-fit: cover;
-}
-
-@media only screen and (max-width: 1000px) {
-    .services-cards {
-        width: 100%;
-    }
 }
 
 .services-end {
@@ -94,11 +93,11 @@
 }
 
 .services-end-text a {
-    margin: 1rem;
+    margin: 2rem;
 }
 
 .services-end-text {
     position: absolute;
-    top: 5%;
-    right: 20%;
+    bottom: 20%;
+    right: 10%;
 }
