@@ -1,10 +1,16 @@
-$border-radius: 0;
-$article-width: 25rem;
-
 @mixin news-basestyle {
   display: flex;
   padding-left: 0;
   padding-right: 0;
+}
+
+.news-main {
+  --article-width: 26.5rem;
+  --border-radius: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .news-hero {
@@ -13,15 +19,16 @@ $article-width: 25rem;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  text-align: center;
-  position: relative;
 }
 
-.hero-text {
-  h1 {
-    color: var(--color-bg-alt);
-    top: 15rem;
-    left: 5rem;
+.news-title {
+  text-align: center;
+  padding: 4rem;
+  margin-bottom: 2rem;
+
+  p {
+    font-style: italic;
+    padding: 0.5rem;
   }
 }
 
@@ -29,60 +36,11 @@ $article-width: 25rem;
   display: flex;
   flex-wrap: wrap;
   padding-top: 1rem;
-  gap: 2rem;
+  padding-left: 0;
+  padding-right: 0;
+  gap: 1.5rem;
   justify-content: left;
   flex-direction: column;
-}
-
-.article-nav {
-  padding: 1rem;
-}
-
-.img-container {
-  @include news-basestyle();
-  height: 20rem;
-
-  img {
-    @include news-basestyle();
-    object-fit: cover;
-  }
-}
-
-.news-article {
-  @include news-basestyle();
-  padding: 2rem;
-  margin-top: 2rem;
-  flex-direction: column;
-}
-
-.card {
-  overflow: hidden;
-  height: auto;
-  width: $article-width;
-  border-radius: $border-radius;
-
-  time {
-    font-size: var(--font-size-xs);
-    padding: 0.5rem;
-    margin-left: 0.5rem;
-  }
-}
-
-.zoom {
-  width: $article-width;
-  height: 17rem;
-  overflow: hidden;
-
-  img {
-    border-radius: $border-radius;
-    width: $article-width;
-    height: 17rem;
-    transition: 1s all ease-in-out;
-  }
-
-  img:hover {
-    transform: scale(1.1);
-  }
 }
 
 @media (min-width: 62rem) {
@@ -91,13 +49,54 @@ $article-width: 25rem;
   }
 }
 
+.news-card {
+  overflow: hidden;
+  height: auto;
+  width: var(--article-width);
+  border-radius: var(--border-radius);
+  padding: 0;
+
+  .zoom {
+    width: var(--article-width);
+    height: 17rem;
+    overflow: hidden;
+
+    img {
+      border-radius: var(--border-radius);
+      width: var(--article-width);
+      height: 17rem;
+      transition: 1s all ease-in-out;
+    }
+
+    img:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  .card-body {
+    h5 {
+      transition: 0.4s;
+    }
+
+    h5:hover {
+      color: var(--color-accent);
+    }
+  }
+
+  time {
+    font-size: var(--font-size-xs);
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+  }
+}
+
 .news-subscription {
-  margin-top: 1.5rem;
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  line-height: 1;
+  line-height: 1.5;
 
   @media screen and (min-width: 768px) {
     flex-direction: row;
@@ -105,6 +104,7 @@ $article-width: 25rem;
 
   p {
     text-align: center;
+
     @media screen and (min-width: 768px) {
       text-align: end;
     }
@@ -112,13 +112,16 @@ $article-width: 25rem;
 
   form {
     width: 100%;
+
     input {
       border: 3px solid var(--color-accent-dark);
       box-shadow: none;
     }
+
     button {
       border: 3px solid var(--color-accent-dark);
       border-left: none;
+
       &:hover {
         background-color: var(--color-accent-dark);
       }
@@ -126,25 +129,41 @@ $article-width: 25rem;
   }
 }
 
-form {
-  width: 100%;
-  input {
-    border: 3px solid var(--color-accent-dark);
-    box-shadow: none;
-  }
-  button {
-    border: 3px solid var(--color-accent-dark);
-    border-left: none;
-    &:hover {
-      background-color: var(--color-accent-dark);
-    }
-  }
-}
-
 .btn-more,
+.btn-newslink,
 .btn-back {
   display: flex;
   justify-content: center;
   padding: 2rem;
   margin-top: 3rem;
 }
+
+/***** Article *****/
+.article-main {
+  display: flex;
+  flex-direction: column
+}
+
+.articleimg-container {
+  @include news-basestyle();
+  height: 20rem;
+
+  img {
+    margin-top: 1rem;
+    @include news-basestyle();
+    object-fit: cover;
+  }
+}
+
+.article-nav {
+  padding: 1rem;
+}
+
+.article-news {
+  @include news-basestyle();
+  flex-direction: column;
+  padding-left: 2rem;
+  margin-bottom: 2rem;
+}
+
+/***** End Article *****/
