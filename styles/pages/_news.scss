@@ -7,14 +7,36 @@ $article-width: 25rem;
     padding-right: 0;
 }
 
+.news-hero {
+    background-image: url(../../assets/images/readme.jpg);
+    height: 40rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+}
+
+.hero-text {
+    h1 {
+        color: var(--color-bg-alt);
+        top: 15rem;
+        left: 5rem;
+    }
+}
+
+
 .news-container {
-    @include news-basestyle();
+    display: flex;
     flex-wrap: wrap;
     padding-top: 1rem;
     gap: 2rem;
     justify-content: left;
-    align-items: center;
     flex-direction: column;
+}
+
+.article-nav {
+    padding: 1rem;
 }
 
 .img-container {
@@ -27,18 +49,17 @@ $article-width: 25rem;
     }
 }
 
-
 .news-article {
     @include news-basestyle();
-    padding: 1rem;
+    padding: 2rem;
     margin-top: 2rem;
     flex-direction: column;
 }
 
 .card {
     overflow: hidden;
-    width: $article-width;
     height: auto;
+    width: $article-width;
     border-radius: $border-radius;
 
     time {
@@ -49,6 +70,10 @@ $article-width: 25rem;
 }
 
 .zoom {
+    width: $article-width;
+    height: 17rem;
+    overflow: hidden;
+
     img {
         border-radius: $border-radius;
         width: $article-width;
@@ -59,10 +84,6 @@ $article-width: 25rem;
     img:hover {
         transform: scale(1.1);
     }
-
-    width: $article-width;
-    height: 17rem;
-    overflow: hidden;
 }
 
 @media (min-width: 62rem) {
@@ -71,10 +92,45 @@ $article-width: 25rem;
     }
 }
 
+.news-subscription {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    line-height: 1;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+    }
+
+    p {
+        text-align: center;
+        @media screen and (min-width: 768px) {
+            text-align: end;
+        }
+    }
+
+    form {
+        width: 100%;
+        input {
+            border: 3px solid var(--color-accent-dark);
+            box-shadow: none;
+        }
+        button {
+            border: 3px solid var(--color-accent-dark);
+            border-left: none;
+            &:hover {
+                background-color: var(--color-accent-dark);
+            }
+        }
+    }
+}
+
 .btn-more,
 .btn-back {
     display: flex;
     justify-content: center;
     padding: 2rem;
-    margin-top: 5rem;
+    margin-top: 3rem;
 }
