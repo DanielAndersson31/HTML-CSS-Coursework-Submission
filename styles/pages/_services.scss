@@ -50,16 +50,13 @@
     display: flex;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    width: 100%;
+    width: 80%;
 
 }
 .services-cards img {
     object-fit: cover;
-}
-@media only screen and (max-width: 1000px) {
-    .services-cards {
-      width: 80%;
-    }
+    width: 100%;
+    height: auto;
 }
 .services-end img {
     object-fit: cover;
@@ -69,6 +66,6 @@
 }
 .services-end-button {
     position: absolute;
-    left: 70%;
-    bottom: 40%;
+    left: 80%;
+    bottom: 100%;
 }
