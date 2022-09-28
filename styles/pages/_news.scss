@@ -1,11 +1,12 @@
+@mixin news-basestyle {
+    display: flex;
+    padding-left: 0;
+    padding-right: 0;
+}
 .news-main {
     --article-width: 25rem;
     --border-radius: 0;
-    @mixin news-basestyle {
-        display: flex;
-        padding-left: 0;
-        padding-right: 0;
-    }
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -48,15 +49,15 @@
 .news-card {
     overflow: hidden;
     height: auto;
-    width: $article-width;
-    border-radius: $border-radius;
+    width: var(--article-width);
+    border-radius: var(--border-radius);
     .zoom {
-        width: $article-width;
+        width: var(--article-width);
         height: 17rem;
         overflow: hidden; 
         img {
-            border-radius: $border-radius;
-            width: $article-width;
+            border-radius: var(--border-radius);
+            width: var(--article-width);
             height: 17rem;
             transition: 1s all ease-in-out;
         }        
@@ -123,6 +124,10 @@
 }
 
 /***** Article *****/
+.article-main {
+    background-color: aqua;
+}
+
 .articleimg-container {
     @include news-basestyle();
     height: 20rem; 

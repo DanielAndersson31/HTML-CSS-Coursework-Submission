@@ -630,9 +630,19 @@ body {
 }
 
 .news-main {
+  --article-width: 25rem;
+  --border-radius: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.news-hero {
+  background-image: url(../../assets/images/readme.jpg);
+  height: 40rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .news-title {
@@ -645,14 +655,6 @@ body {
   padding: 0.5rem;
 }
 
-.news-hero {
-  background-image: url(../../assets/images/readme.jpg);
-  height: 40rem;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .news-container {
   display: flex;
   flex-wrap: wrap;
@@ -663,11 +665,36 @@ body {
   flex-direction: column;
 }
 
+@media (min-width: 62rem) {
+  .news-container {
+    flex-direction: row;
+  }
+}
 .news-card {
   overflow: hidden;
   height: auto;
-  width: 25rem;
-  border-radius: 0;
+  width: var(--article-width);
+  border-radius: var(--border-radius);
+}
+.news-card .zoom {
+  width: var(--article-width);
+  height: 17rem;
+  overflow: hidden;
+}
+.news-card .zoom img {
+  border-radius: var(--border-radius);
+  width: var(--article-width);
+  height: 17rem;
+  transition: 1s all ease-in-out;
+}
+.news-card .zoom img:hover {
+  transform: scale(1.1);
+}
+.news-card .card-body h5 {
+  transition: 0.4s;
+}
+.news-card .card-body h5:hover {
+  color: var(--color-accent);
 }
 .news-card time {
   font-size: var(--font-size-xs);
@@ -675,33 +702,6 @@ body {
   margin-left: 0.5rem;
 }
 
-.zoom {
-  width: 25rem;
-  height: 17rem;
-  overflow: hidden;
-}
-.zoom img {
-  border-radius: 0;
-  width: 25rem;
-  height: 17rem;
-  transition: 1s all ease-in-out;
-}
-.zoom img:hover {
-  transform: scale(1.1);
-}
-
-.card-body h5 {
-  transition: 0.4s;
-}
-.card-body h5:hover {
-  color: var(--color-accent);
-}
-
-@media (min-width: 62rem) {
-  .news-container {
-    flex-direction: row;
-  }
-}
 .news-subscription {
   margin-top: 2rem;
   display: flex;
@@ -748,6 +748,10 @@ body {
 }
 
 /***** Article *****/
+.article-main {
+  background-color: aqua;
+}
+
 .articleimg-container {
   display: flex;
   padding-left: 0;
