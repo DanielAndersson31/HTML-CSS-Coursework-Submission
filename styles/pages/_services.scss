@@ -29,14 +29,13 @@
 }
 .services-gallery {
     margin-top: 1rem;
+    float: left;
+    width: 25%;
 }
 .services-gallery-content {
-    float: left;
-    margin-left: 4rem;
-    margin-top: 2rem;
     border: 1px solid rgb(190, 190, 190);
     border-radius: 2%;
-    width: 18.75rem;
+    margin: 2rem;
 }
 .services-gallery-content:hover {
     border: 1px solid black;
@@ -44,19 +43,15 @@
 .services-gallery-content img {
     object-fit: cover;
     border-radius: 2%;
+    width: 100%;
+    height: auto;
 }
 .services-gallery-desc {
     text-align: center;
     padding: 1rem;
 }
-.services-card {
-    margin-top: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.services-card img {
-    object-fit: cover;
-    width: 100%;
-    height: 30rem;
-}
+@media only screen and (max-width: 1500px) {
+    .services-gallery {
+      width: 50%;
+    }
+  }
