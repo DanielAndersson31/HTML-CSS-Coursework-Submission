@@ -1,0 +1,32 @@
+@mixin newsarticle-basestyle {
+  display: flex;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.article-main {
+  display: flex;
+  flex-direction: column
+}
+
+.articleimg-container {
+  @include newsarticle-basestyle();
+  height: 20rem;
+  img {
+    margin-top: 1rem;
+    @include newsarticle-basestyle();
+    object-fit: cover;
+  }
+}
+
+.article-nav {
+  padding: 1rem;
+}
+
+.article-news {
+  @include newsarticle-basestyle();
+  flex-direction: column;
+  padding-left: 2rem;
+  margin-bottom: 2rem;
+}
+

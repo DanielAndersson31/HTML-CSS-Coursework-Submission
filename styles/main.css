@@ -646,9 +646,13 @@ body {
   padding: 4rem;
   margin-bottom: 2rem;
 }
+.news-title hr {
+  max-width: 50rem;
+  margin: auto;
+}
 .news-title p {
   font-style: italic;
-  padding: 0.5rem;
+  padding: 0.25rem;
 }
 
 .news-container {
@@ -745,7 +749,6 @@ body {
   margin-top: 3rem;
 }
 
-/***** Article *****/
 .article-main {
   display: flex;
   flex-direction: column;
@@ -779,7 +782,6 @@ body {
   margin-bottom: 2rem;
 }
 
-/***** End Article *****/
 .contact-main .main-content {
   background-image: linear-gradient(rgba(97, 11, 236, 0.3), rgba(11, 25, 155, 0.3)), url("/assets/images/Contact-Support.jpg");
   background-size: cover;
