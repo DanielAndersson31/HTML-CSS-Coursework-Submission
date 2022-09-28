@@ -140,7 +140,8 @@
 
 /***** Article *****/
 .article-main {
-  display: flex
+  display: flex;
+  flex-direction: column
 }
 
 .articleimg-container {

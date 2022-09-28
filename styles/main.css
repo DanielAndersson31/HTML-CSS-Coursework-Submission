@@ -752,6 +752,7 @@ body {
 /***** Article *****/
 .article-main {
   display: flex;
+  flex-direction: column;
 }
 
 .articleimg-container {
