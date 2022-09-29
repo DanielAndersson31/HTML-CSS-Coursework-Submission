@@ -652,6 +652,7 @@ body {
 .news-title hr {
   max-width: 50rem;
   margin: auto;
+  color: var(--color-accent);
 }
 .news-title p {
   font-style: italic;
