@@ -1085,17 +1085,19 @@ body {
   margin: 1rem;
   border-radius: 1.5rem;
 }
-.main-about .about-form h3, .main-about .about-form p {
+.main-about .about-form h3,
+.main-about .about-form p {
   margin-top: 2rem;
 }
 @media screen and (max-width: 600px) {
-  .main-about form .column {
+  .main-about .fill-out-form .column {
     width: 100%;
     display: block;
   }
 }
 .main-about .fill-out-form h2, .main-about .fill-out-form p {
   display: flex;
+  text-align: center;
   justify-content: center;
-  align-items: center;
+  margin-inline: auto;
 }/*# sourceMappingURL=main.css.map */
