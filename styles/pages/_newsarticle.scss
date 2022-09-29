@@ -21,6 +21,14 @@
 
 .article-nav {
   padding: 1rem;
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      color: var(--color-accent);
+    }
+  }
 }
 
 .article-news {

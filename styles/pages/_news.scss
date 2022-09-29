@@ -11,10 +11,14 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  a {
+    text-decoration: none;
+  }
 }
 
 .news-hero {
-  background-image: url(../../assets/images/readme.jpg);
+  background-image: url(../../assets/images/technews.jpg);
   height: 40rem;
   background-position: center;
   background-repeat: no-repeat;
@@ -72,21 +76,23 @@
       width: var(--article-width);
       height: 17rem;
       transition: 1s all ease-in-out;
+      
+      &:hover {
+        transform: scale(1.1);
+      }
     }
 
-    img:hover {
-      transform: scale(1.1);
-    }
   }
 
   .card-body {
     h5 {
       transition: 0.4s;
+
+      &:hover {
+        color: var(--color-accent);
+      }
     }
 
-    h5:hover {
-      color: var(--color-accent);
-    }
   }
 
   time {

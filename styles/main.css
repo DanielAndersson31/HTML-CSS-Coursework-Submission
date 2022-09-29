@@ -632,9 +632,12 @@ body {
   flex-direction: column;
   justify-content: center;
 }
+.news-main a {
+  text-decoration: none;
+}
 
 .news-hero {
-  background-image: url(../../assets/images/readme.jpg);
+  background-image: url(../../assets/images/technews.jpg);
   height: 40rem;
   background-position: center;
   background-repeat: no-repeat;
@@ -771,6 +774,12 @@ body {
 
 .article-nav {
   padding: 1rem;
+}
+.article-nav a {
+  text-decoration: none;
+}
+.article-nav a:hover {
+  color: var(--color-accent);
 }
 
 .article-news {
