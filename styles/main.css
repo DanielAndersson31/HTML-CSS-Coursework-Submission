@@ -916,6 +916,7 @@ body {
   float: left;
   width: 25%;
   margin-bottom: 1%;
+  transition: transform 0.5s;
 }
 
 .services-gallery-content {
@@ -941,6 +942,10 @@ body {
   padding: 2%;
 }
 
+.services-gallery:hover {
+  transform: scale(1.05);
+}
+
 @media only screen and (max-width: 1000px) {
   .services-gallery {
     width: 50%;
@@ -953,6 +958,7 @@ body {
 
 .services-cards {
   margin: 1%;
+  transition: transform 0.5s;
 }
 
 .services-cards img {
@@ -960,6 +966,10 @@ body {
      object-fit: cover;
   width: 100%;
   height: auto;
+}
+
+.services-cards:hover {
+  transform: scale(1.05);
 }
 
 @media only screen and (max-width: 1000px) {
