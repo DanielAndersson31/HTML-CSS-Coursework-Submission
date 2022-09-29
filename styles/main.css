@@ -4,7 +4,7 @@
   --color-bg-alt: #afafaf;
   --color-text: #242424;
   --color-text-light: #404040;
-  --color-accent: rgb(234, 138, 4);
+  --color-accent: #ea8a04;
   --color-accent-dark: #202731;
   --color-accent-dark-hover: hsl(215, 21%, 20%);
   --font-size-xs: 0.75rem;
@@ -751,10 +751,30 @@ body {
   padding: 2rem;
   margin-top: 3rem;
 }
+.btn-more .btn-inline,
+.btn-newslink .btn-inline,
+.btn-back .btn-inline {
+  border-color: var(--color-accent);
+  border: 3px solid var(--color-accent);
+  color: var(--color-accent);
+}
+.btn-more .btn-inline:hover,
+.btn-newslink .btn-inline:hover,
+.btn-back .btn-inline:hover {
+  background-color: var(--color-accent);
+  border: 3px solid var(--color-accent);
+  color: var(--color-bg);
+}
 
 .article-main {
   display: flex;
   flex-direction: column;
+}
+.article-main a {
+  text-decoration: none;
+}
+.article-main a:hover {
+  color: var(--color-accent);
 }
 
 .articleimg-container {
@@ -774,12 +794,6 @@ body {
 
 .article-nav {
   padding: 1rem;
-}
-.article-nav a {
-  text-decoration: none;
-}
-.article-nav a:hover {
-  color: var(--color-accent);
 }
 
 .article-news {

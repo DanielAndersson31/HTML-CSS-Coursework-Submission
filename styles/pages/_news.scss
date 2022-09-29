@@ -148,5 +148,17 @@
   justify-content: center;
   padding: 2rem;
   margin-top: 3rem;
+
+  .btn-inline {
+    border-color: var(--color-accent);
+    border: 3px solid var(--color-accent);
+    color: var(--color-accent);
+
+    &:hover {
+      background-color: var(--color-accent);
+      border: 3px solid var(--color-accent);
+      color: var(--color-bg);
+    }
+  }
 }
 
