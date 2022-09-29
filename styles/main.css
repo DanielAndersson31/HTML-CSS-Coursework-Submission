@@ -884,7 +884,7 @@ body {
   filter: brightness(1000);
 }
 .contact-main .accordion-body {
-  padding-top: 0;
+  padding-top: 0.5rem;
 }
 
 .form-control:focus {
