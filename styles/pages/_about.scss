@@ -241,15 +241,14 @@
       .column {
         width: 100%;
         display: block;
-        
       }
     }
-    h2,p {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    margin-inline: auto;
+    h2,
+    p {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      margin-inline: auto;
     }
   }
-  
 }

@@ -5,10 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>GBG WEB/DEV-About-us</title>
-    <meta name="keywords" content="" />
-    <meta name="description" content="" />
-    <meta name="author" content="Group6" />
+    <title>GBG/WEBDEV | About Us</title>
+    <meta
+      name="keywords"
+      content="web development, gothenburg, webbsite, developer, solutions, "
+    />
+    <meta
+      name="description"
+      content="We're a small webbdeveloper-team based in gothenburg. With years of experience in the field we offer efficient soultions to your webb-related projects"
+    />
+    <meta name="author" content="Group 6 - Natanael" />
 
     <!-- Bootstrap -->
     <link
@@ -44,7 +50,7 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ms-auto">
-              <!-- Don't forget to add 'aria-current="page"' and class 'active' -->
+              
               <a class="nav-link" href="services.html">Services</a>
               <a class="nav-link" href="news.html">News</a>
               <a class="nav-link" href="career.html">Career</a>
@@ -72,8 +78,8 @@
               </p>
 
               <div class="hero-buttons">
-                <a href="#" class="btn button-accent">Contact us</a>
-                <a href="#" class="btn button-accent">News</a>
+                <a href="contact.html" class="btn button-accent">Contact us</a>
+                <a href="news.html" class="btn button-accent">News</a>
               </div>
             </div>
           </div>
@@ -88,6 +94,7 @@
                 src="/HTML-CSS-Coursework-Submission/assets/videos/video.mp4"
                 controls
                 autoplay
+                alt="Officeworkers sittning around table and discussing and planning their work"
               ></video>
             </div>
             <article class="col oder-1">
@@ -113,9 +120,9 @@
               <button
                 class="btn button-accent"
                 data-bs-toggle="collapse"
-                data-bs-target="#collapseExample"
+                data-bs-target="#CollapseContent"
                 aria-expanded="false"
-                aria-controls="collapseExample"
+                aria-controls="CollapseContent"
               >
                 Read More
               </button>
@@ -124,7 +131,7 @@
           <div class="container">
             <div class="row">
               <article class="col">
-                <div class="collapse" id="collapseExample">
+                <div class="collapse" id="CollapseContent">
                   <h3>Innovation</h3>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -178,13 +185,13 @@
                 </div>
               </article>
               <div class="col expanded-img">
-                <div class="collapse" id="collapseExample">
+                <div class="collapse" id="CollapseContent">
                   <img src="../assets/images/pexels-fauxels-3184360.jpg" />
                 </div>
-                <div class="collapse" id="collapseExample">
+                <div class="collapse" id="CollapseContent">
                   <img src="../assets/images/pexels-fauxels-3184359.jpg" />
                 </div>
-                <div class="collapse" id="collapseExample">
+                <div class="collapse" id="CollapseContent">
                   <img src="../assets/images/pexels-fauxels-3182826.jpg" />
                 </div>
               </div>
@@ -192,6 +199,7 @@
           </div>
         </div>
       </section>
+      <!--new section-->
       <section class="info">
         <div class="container">
           <div class="row">
@@ -210,11 +218,12 @@
           </div>
         </div>
       </section>
+      <!--new section-->
       <section class="our-workspace">
         <div class="container">
           <div class="header"><h2>Our Workspace</h2></div>
           <div class="row">
-            <div class="col">
+            <article class="col">
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
                 facilisis massa dictum metus hendrerit, nec rutrum velit
@@ -228,22 +237,22 @@
                 facilisis. Nulla facilisi. Vivamus erat mi, lobortis eu mattis
                 eu, semper sed magna. Praesent semper eros lacus.
               </p>
-            </div>
+            </article>
           </div>
           <div class="workspace-button">
             <button
               class="btn btn-light text-warning"
               data-bs-toggle="collapse"
-              data-bs-target="#collapseExample"
+              data-bs-target="#CollapseContent"
               aria-expanded="false"
-              aria-controls="collapseExample"
+              aria-controls="CollapseContent"
             >
               Read More
             </button>
           </div>
           <div class="row">
             <article class="col">
-              <div class="collapse" id="collapseExample">
+              <div class="collapse" id="CollapseContent">
                 <h3>Office policy</h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -288,6 +297,7 @@
           </div>
         </div>
       </section>
+      <!--new section-->
       <section class="interviews">
         <div class="container">
           <div class="row">
@@ -295,7 +305,7 @@
               <span style="color: orange">O</span>ur
               <span style="color: orange">T</span>eam
             </h2>
-            <p></p>
+            <p>Whats best about working here?</p>
             <div class="col">
               <div class="interviews-gallery">
                 <div class="card">
@@ -385,11 +395,12 @@
           </div>
         </div>
       </section>
+      <!--new section-->
       <section class="fill-out-form">
         <h2>Questions about our organisation?</h2>
         <p>Feel free to fill out the form below and we'll get back you!</p>
         <div class="container form-floating d-flex flex-row">
-          <form class="row">
+          <form class="row" action="mailto:info@gbgwebdev.com" method="GET">
             <div class="col-md-12">
               <label class="form-label"></label>
               <input
@@ -447,6 +458,7 @@
         </div>
       </section>
     </main>
+    <!--footer begins-->
     <footer class="footer">
       <div class="container">
         <div class="footer-columns">
