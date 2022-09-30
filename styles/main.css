@@ -943,6 +943,256 @@ body {
   filter: brightness(1000);
 }
 .contact-main .accordion-body {
+<<<<<<< HEAD
+  padding-top: 0;
+}
+
+.main-about {
+  --margin-side-lg: 6rem;
+  --padding-side: 1rem;
+  --margin-side: 1rem;
+  --transition-time: 200ms;
+  --box-shadow: 0 2px 10px 2px rgba(0, 0, 0, 0.15);
+  --section-margin: 4rem;
+}
+@media screen and (min-width: 992px) {
+  .main-about {
+    --section-margin: 6rem;
+    --margin-side-lg: 20rem;
+    --padding-side: 4rem;
+  }
+}
+.main-about .container {
+  margin-bottom: var(--section-margin);
+}
+.main-about .hero {
+  background-image: url(/HTML-CSS-Coursework-Submission/assets/images/pexels-peng-liu-169647.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 2;
+  padding: calc(var(--section-margin) * 2) 0 12rem 0;
+  margin-bottom: var(--section-margin);
+}
+.main-about .hero .col {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.main-about .hero .col h1 {
+  margin-right: auto;
+  color: var(--color-bg);
+}
+.main-about .hero .col p {
+  margin-left: auto;
+  color: var(--color-bg);
+  font-size: var(--font-size-ms);
+}
+.main-about .hero .col .hero-buttons a:not(:last-child) {
+  margin-right: 2rem;
+}
+.main-about .hero .col a {
+  max-width: 20rem;
+  -webkit-margin-end: auto;
+          margin-inline-end: auto;
+  display: inline-block;
+}
+.main-about .hero::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(20, 22, 22, 0.3);
+  z-index: -1;
+}
+.main-about .we-are-gbgwebdev .row {
+  gap: 1.5rem;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .main-about .we-are-gbgwebdev .row {
+    flex-direction: row;
+    padding-top: 1rem;
+  }
+}
+.main-about .we-are-gbgwebdev video {
+  width: 100%;
+  box-shadow: var(--box-shadow);
+  content: cover;
+  padding: 0;
+  margin-block: auto;
+}
+.main-about .we-are-gbgwebdev article {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.main-about .we-are-gbgwebdev article button {
+  margin-top: 0.5rem;
+  width: 10rem;
+  margin-left: 1.5rem;
+}
+.main-about .we-are-gbgwebdev article p {
+  margin-left: auto;
+  padding: 1rem;
+  font-size: var(--font-size-sm);
+}
+.main-about .we-are-gbgwebdev article h2,
+.main-about .we-are-gbgwebdev article h3 {
+  margin-right: auto;
+}
+.main-about .we-are-gbgwebdev .expanded-img {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.main-about .we-are-gbgwebdev .expanded-img img {
+  max-height: 20rem;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  box-shadow: var(--box-shadow);
+}
+.main-about .info {
+  margin-top: -1;
+}
+@media screen and (max-width: 768px) {
+  .main-about .info {
+    margin: 0.75rem;
+  }
+}
+.main-about .info .row {
+  gap: 1.5rem;
+  flex-direction: column;
+  justify-content: center;
+}
+.main-about .info .row .col {
+  border-bottom: 0.1rem solid rgba(0, 0, 0, 0.323);
+}
+.main-about .info .row .col h2 {
+  font-size: 7rem;
+  color: var(--color-accent);
+}
+.main-about .our-workspace {
+  background-image: url(/HTML-CSS-Coursework-Submission/assets/images/pexels-olga-neptuna-2078774.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 2;
+  padding-top: var(--section-margin);
+  border-radius: 1rem;
+  margin-inline: 1rem;
+}
+@media screen and (max-width: 768px) {
+  .main-about .our-workspace {
+    margin: 0.75rem;
+  }
+}
+.main-about .our-workspace h3 {
+  color: var(--color-bg);
+  margin-block: 1rem;
+}
+.main-about .our-workspace h2 {
+  color: var(--color-bg);
+  margin-block: 1rem;
+}
+.main-about .our-workspace p {
+  color: var(--color-bg);
+  font-size: var(--font-size-sm);
+  margin-block: 3rem;
+}
+.main-about .our-workspace button {
+  margin-bottom: 2rem;
+}
+.main-about .our-workspace::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 168, 6, 0.836);
+  z-index: -1;
+  border-radius: 1rem;
+}
+.main-about .interviews .col {
+  display: flex;
+  gap: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .main-about .interviews .col {
+    flex-direction: row;
+    margin-block: 20;
+    max-width: 70rem;
+  }
+}
+.main-about .interviews .interviews-gallery {
+  display: flex;
+  width: 100%;
+  gap: 1.5rem;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .main-about .interviews .interviews-gallery {
+    flex-direction: row;
+  }
+}
+.main-about .interviews .interviews-gallery .image.wrapper {
+  overflow: hidden;
+}
+.main-about .interviews .interviews-gallery .header {
+  margin-bottom: 2rem;
+}
+.main-about .interviews .interviews-gallery .card {
+  border-radius: 2rem;
+  box-shadow: var(--box-shadow);
+  width: 100%;
+  border-radius: 0;
+  transition: box-shadow calc(var(--transition-time) * 2) ease-out;
+}
+.main-about .interviews .interviews-gallery .card:hover {
+  box-shadow: var(--box-shadow);
+}
+.main-about .interviews .interviews-gallery .card img {
+  max-height: 20rem;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: transform calc(var(--transition-time) * 2) ease-out;
+}
+.main-about .interviews .interviews-gallery .card h6 {
+  font-style: italic;
+  font-weight: lighter;
+}
+.main-about .interviews .interviews-gallery .card span {
+  font-size: var(--font-size-xs);
+}
+.main-about .about-form {
+  background-color: rgba(73, 70, 63, 0.262);
+  margin: 1rem;
+  border-radius: 1.5rem;
+}
+.main-about .about-form h3,
+.main-about .about-form p {
+  margin-top: 2rem;
+}
+@media screen and (max-width: 600px) {
+  .main-about .fill-out-form .column {
+    width: 100%;
+    display: block;
+  }
+}
+.main-about .fill-out-form h2,
+.main-about .fill-out-form p {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-inline: auto;
+=======
   padding-top: 0.5rem;
 }
 
@@ -1079,4 +1329,5 @@ body {
   position: absolute;
   bottom: 40%;
   right: 15%;
+>>>>>>> b77e55f0366b48736ba5d5576fb713550e9cca7d
 }/*# sourceMappingURL=main.css.map */

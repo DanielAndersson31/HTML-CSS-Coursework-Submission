@@ -16,5 +16,5 @@ Vi ansvarade alla för var sin html-sida med tillhörande scss (och eventuella h
 - _Christoffer Alm_: services.html
 - _Thomas Palmqvist_: news.html
 - _Per Ahlinder_: career.html
-- _Nathanael Augustin_: about.html
+- _Natanael Augustin_: about.html
 - _Daniel Andersson_: contact.html
