@@ -327,7 +327,9 @@ body {
   margin-bottom: var(--section-margin);
 }
 .home-main .hero {
-  padding: calc(var(--section-margin) * 2) 0 12rem 0;
+  -webkit-padding-before: clamp(1rem, 10vw, 14rem);
+          padding-block-start: clamp(1rem, 10vw, 14rem);
+  height: 40rem;
   margin-bottom: var(--section-margin);
   background-image: url("../assets/images/home/hero.jpg");
   background-size: cover;
@@ -984,7 +986,7 @@ body {
   margin-bottom: var(--section-margin);
 }
 .main-about .hero {
-  background-image: url(/HTML-CSS-Coursework-Submission/assets/images/pexels-peng-liu-169647.jpg);
+  background-image: url(../assets/images/pexels-peng-liu-169647.jpg);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -992,6 +994,7 @@ body {
   z-index: 2;
   padding: calc(var(--section-margin) * 2) 0 12rem 0;
   margin-bottom: var(--section-margin);
+  height: 40rem;
 }
 .main-about .hero .col {
   display: flex;
