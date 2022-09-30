@@ -11,7 +11,8 @@
   }
 
   .hero {
-    padding: calc(var(--section-margin) * 2) 0 12rem 0;
+    padding-block-start: clamp(1rem, 10vw, 14rem);
+    height: 40rem;
     margin-bottom: var(--section-margin);
     background-image: url("../assets/images/home/hero.jpg");
     background-size: cover;
