@@ -935,7 +935,7 @@ body {
   background-color: var(--color-accent-dark) !important;
 }
 .contact-main .accordion-button::after {
-  filter: brightness(1000);
+  filter: brightness(100);
 }
 .contact-main .accordion-body {
   padding-top: 0.5rem;

@@ -6,17 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>GBG\WEBDEV | Contact</title>
-    <meta name="description" content="In need of assistance? Contact us for more information regarding our services and products" />
-    <meta name="keywords" content="contact us, support, tech support, it consulting support, sales, salesperson,gbgwebdev support " />
+    <meta
+      name="description"
+      content="In need of assistance? Contact us for more information regarding our services and products"
+    />
+    <meta
+      name="keywords"
+      content="contact us, support, tech support, it consulting support, sales, salesperson,gbgwebdev support "
+    />
     <meta name="author" content="GBG\WEBDEV - Daniel Andersson" />
-
 
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css" />
     <script defer src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
-   
+
     <script src="https://kit.fontawesome.com/09abedabe6.js" crossorigin="anonymous"></script>
 
-  
     <link rel="stylesheet" href="../styles/main.css" />
   </head>
   <body>
@@ -78,78 +82,70 @@
             </p>
           </div>
         </div>
-        
-          <form class="contact-form">
-            <!-- Form - First Name and Last name-->
-            <h2>Message us now!</h2>
 
-            <div class="col">
-              <div class="form-floating mb-5">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="fName"
-                  placeholder="First name"
-                  aria-label="Enter first name"
-                />
-                <label for="fName">First Name</label>
-              </div>
-            </div>
-            <div class="col">
-              <div class="form-floating mb-5">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="lName"
-                  placeholder="Last name"
-                  aria-label="Last name"
-                />
-                <label for="floatingInput">Last Name</label>
-              </div>
-            </div>
+        <form class="contact-form">
+          <!-- Form - First Name and Last name-->
+          <h2>Message us now!</h2>
 
-            <!-- Email address-->
+          <div class="col">
             <div class="form-floating mb-5">
               <input
-                type="email"
+                type="text"
                 class="form-control"
-                id="email"
-                placeholder="example@example.com"
-                aria-label="Enter Email address"
+                id="fName"
+                placeholder="First name"
+                aria-label="Enter first name"
               />
-              <label for="email">Mail Address</label>
+              <label for="fName">First Name</label>
             </div>
-            <!-- Category-->
+          </div>
+          <div class="col">
             <div class="form-floating mb-5">
-              <select class="form-select" id="selectCategory" aria-label="Select category">
-                <option selected>Select option</option>
-                <option value="Support">Support</option>
-                <option value="Sales">Sales</option>
-                <option value="Hardware">Hardware</option>
-                <option value="Other">Other</option>
-              </select>
-              <label for="selectCategory">Category</label>
+              <input type="text" class="form-control" id="lName" placeholder="Last name" aria-label="Last name" />
+              <label for="floatingInput">Last Name</label>
             </div>
-            <!-- Subject-->
-            <div class="form-floating mb-5">
-              <input type="text" class="form-control" id="subject" placeholder="Subject" />
-              <label for="floatingInput">Subject</label>
-            </div>
-            <!-- Message-->
-            <div class="form-floating mb-5">
-              <textarea
-                class="form-control"
-                placeholder="Send a message"
-                id="floatingTextarea2"
-                style="height: 100px"
-              ></textarea>
-              <label for="floatingTextarea2">Message..</label>
-            </div>
-            <div class="col-12">
-              <button type="submit" class="btn btn-secondary">Submit</button>
-            </div>
-          </form>
-      
+          </div>
+
+          <div class="form-floating mb-5">
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="example@example.com"
+              aria-label="Enter Email address"
+            />
+            <label for="email">Mail Address</label>
+          </div>
+
+          <div class="form-floating mb-5">
+            <select class="form-select" id="selectCategory" aria-label="Select category">
+              <option selected>Select option</option>
+              <option value="Support">Support</option>
+              <option value="Sales">Sales</option>
+              <option value="Hardware">Hardware</option>
+              <option value="Other">Other</option>
+            </select>
+            <label for="selectCategory">Category</label>
+          </div>
+
+          <div class="form-floating mb-5">
+            <input type="text" class="form-control" id="subject" placeholder="Subject" />
+            <label for="floatingInput">Subject</label>
+          </div>
+          <!-- Message-->
+          <div class="form-floating mb-5">
+            <textarea
+              class="form-control"
+              placeholder="Send a message"
+              id="floatingTextarea2"
+              style="height: 100px"
+            ></textarea>
+            <label for="floatingTextarea2">Message..</label>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-secondary">Submit</button>
+          </div>
+        </form>
       </section>
 
       <section class="card-contact-information">
@@ -157,7 +153,8 @@
           <i class="fa-solid fa-envelope" alt="Mail icon"></i>
           <a href="mailto:support@gbgwebdev.com"
             ><h3>support@<wbr />gbgwebdev.com</h3></a
-          
+          >
+
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing</p>
         </div>
         <div class="contact-office">
@@ -166,7 +163,7 @@
           <p>Lorem ipsum dolor sit amet</p>
         </div>
         <div class="contact-phone">
-         <i class="fa-solid fa-phone" alt="Phone icon"></i>
+          <i class="fa-solid fa-phone" alt="Phone icon"></i>
           <a href="tel:+46 123-4567-890"><h3>+46 123-4567-890</h3></a>
           <p>Lorem ipsum dolor, consectetur adipisicing.</p>
         </div>
