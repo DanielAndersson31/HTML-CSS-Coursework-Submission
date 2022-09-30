@@ -1,0 +1,119 @@
+.services-cover {
+    position: relative;
+}
+
+.services-cover img {
+    object-fit: cover;
+    width: 100%;
+    height: 30rem;
+}
+
+.services-cover-text {
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+}
+
+.services-cover-text h3 {
+    margin-bottom: 1rem;
+}
+
+.services-cover-button {
+    margin-left: 1rem;
+}
+
+#services-h2 {
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-bottom: 2%;
+}
+
+.services-gallery {
+    float: left;
+    width: 25%;
+    margin-bottom: 1%;
+    transition: transform .5s;
+}
+
+.services-gallery-content {
+    border: 1px solid rgb(190, 190, 190);
+    border-radius: 2%;
+    margin: 4%;
+}
+
+.services-gallery-content:hover {
+    border: 1px solid black;
+}
+
+.services-gallery-content img {
+    object-fit: cover;
+    border-radius: 2%;
+    width: 100%;
+    height: auto;
+}
+
+.services-gallery-desc {
+    text-align: center;
+    padding: 2%;
+}
+
+.services-gallery:hover {
+    transform: scale(1.05);
+}
+
+@media only screen and (max-width: 1000px) {
+    .services-gallery {
+        width: 50%;
+    }
+}
+
+.services-cards-container {
+    display: flex;
+    margin-bottom: 2%;
+}
+
+.services-cards {
+    margin: 1%;
+    transition: transform .5s;
+}
+
+.services-cards img {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+.services-cards:hover {
+    transform: scale(1.05);
+}
+
+@media only screen and (max-width: 1000px) {
+    .services-cards-container {
+        flex-direction: column;
+    }
+}
+
+.services-end {
+    position: relative;
+}
+
+.services-end img {
+    object-fit: cover;
+    width: 100%;
+    height: 20rem;
+}
+
+.services-end-text h4 {
+    margin-bottom: 1rem;
+}
+
+.services-end-text a {
+    margin-left: 1rem;
+}
+
+.services-end-text {
+    position: absolute;
+    bottom: 40%;
+    right: 15%;
+}
