@@ -36,4 +36,9 @@
 .copyright {
   padding-block-end: 2rem;
   text-align: center;
+  img {
+    margin-inline: auto;
+    padding-block-end: 0.5rem;
+    width: 3rem;
+  }
 }

@@ -211,6 +211,12 @@ a:focus {
           padding-block-end: 2rem;
   text-align: center;
 }
+.copyright img {
+  margin-inline: auto;
+  -webkit-padding-after: 0.5rem;
+          padding-block-end: 0.5rem;
+  width: 3rem;
+}
 
 body {
   display: grid;
@@ -224,8 +230,8 @@ body {
 }
 .navbar .navbar-brand {
   color: var(--color-bg);
-  width: min(50%, 26rem);
-  padding-block: 1rem;
+  width: min(75%, 20rem);
+  padding-block: 0.5rem;
 }
 .navbar .nav-link {
   text-align: center;
@@ -943,8 +949,20 @@ body {
   filter: brightness(1000);
 }
 .contact-main .accordion-body {
-<<<<<<< HEAD
-  padding-top: 0;
+  padding-top: 0.5rem;
+}
+
+.form-control:focus {
+  box-shadow: 0px 0px 3px var(--color-accent);
+}
+.form-control:focus-visible {
+  border-color: var(--color-accent);
+}
+
+.form-select:focus {
+  box-shadow: none;
+  box-shadow: 0px 0px 3px var(--color-accent);
+  border-color: var(--color-accent) !important;
 }
 
 .main-about {
@@ -1192,21 +1210,6 @@ body {
   text-align: center;
   justify-content: center;
   margin-inline: auto;
-=======
-  padding-top: 0.5rem;
-}
-
-.form-control:focus {
-  box-shadow: 0px 0px 3px var(--color-accent);
-}
-.form-control:focus-visible {
-  border-color: var(--color-accent);
-}
-
-.form-select:focus {
-  box-shadow: none;
-  box-shadow: 0px 0px 3px var(--color-accent);
-  border-color: var(--color-accent) !important;
 }
 
 .services-cover {
@@ -1329,5 +1332,4 @@ body {
   position: absolute;
   bottom: 40%;
   right: 15%;
->>>>>>> b77e55f0366b48736ba5d5576fb713550e9cca7d
 }/*# sourceMappingURL=main.css.map */
