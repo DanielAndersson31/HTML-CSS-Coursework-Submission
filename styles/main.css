@@ -650,7 +650,7 @@ body {
 }
 
 .news-hero {
-  background-image: url(../../assets/images/technews.jpg);
+  background-image: url(../assets/images/technews.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
