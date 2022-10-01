@@ -28,7 +28,7 @@
 .services-gallery-container {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    
     justify-content: center;
 }
 
@@ -64,6 +64,7 @@
 @media only screen and (max-width: 768px) {
     .services-gallery-container {
         flex-direction: column;
+        align-items: center;
     }
     .services-gallery {
         margin: 0;
