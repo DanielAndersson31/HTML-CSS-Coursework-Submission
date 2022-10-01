@@ -811,6 +811,7 @@ body {
   display: flex;
   flex-direction: row;
   gap: 0.5rem;
+  padding: 1rem;
 }
 .article-nav ul p {
   color: var(--color-accent);
