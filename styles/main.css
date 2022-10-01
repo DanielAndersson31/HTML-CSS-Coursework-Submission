@@ -871,7 +871,7 @@ body {
   color: var(--color-accent);
 }
 .contact-main .contact-form h2 {
-  padding: 1rem;
+  padding: 2rem;
   text-align: center;
 }
 .contact-main .card-contact-information {
@@ -888,7 +888,7 @@ body {
   flex-direction: column;
   background-image: linear-gradient(-60deg, hsl(286deg, 80%, 43%), var(--color-accent));
   background-size: 150%;
-  color: white;
+  color: #fff;
   margin: 3rem;
   width: 100%;
   aspect-ratio: 1/1;
@@ -898,8 +898,8 @@ body {
   padding: 0.9rem;
 }
 .contact-main .card-contact-information div * {
-  padding: 0.8rem;
-  color: white;
+  color: #fff;
+  padding: 1rem;
 }
 .contact-main .card-contact-information div i {
   font-size: 2rem;
@@ -907,6 +907,11 @@ body {
 .contact-main .card-contact-information div a {
   margin: 0;
   padding: 0;
+  text-shadow: 2px 2px 4px rgba(32, 32, 32, 0.5);
+}
+.contact-main .card-contact-information div a:hover {
+  transition: 300ms ease-out;
+  filter: contrast(75%);
 }
 .contact-main .btn {
   background-color: var(--color-accent);
