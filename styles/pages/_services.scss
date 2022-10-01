@@ -8,6 +8,18 @@
     height: 40rem;
 }
 
+.services-cover-text {
+    color: white;
+    text-shadow: 3px 3px black;
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    @media only screen and (max-width: 768px) {
+        top: 40%;
+        left: 30%;
+    }
+}
+
 .services-h2 {
     margin-top: 2%;
     margin-bottom: 2%;
