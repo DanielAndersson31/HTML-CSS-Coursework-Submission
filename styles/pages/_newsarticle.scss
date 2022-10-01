@@ -27,8 +27,15 @@
 }
 
 .article-nav {
-  padding: 1rem;
+  ul {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
 
+    p {
+      color: var(--color-accent);
+    }
+  }
 }
 
 .article-news {
@@ -36,10 +43,16 @@
   align-items: center;
   flex-direction: column;
   padding-left: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
 
   h2  {
     margin-bottom: 2rem;
   }
+}
+
+.btn-newslink {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
 }
 

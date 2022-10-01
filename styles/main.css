@@ -745,7 +745,6 @@ body {
 }
 
 .btn-more,
-.btn-newslink,
 .btn-back {
   display: flex;
   padding: 2rem;
@@ -753,14 +752,12 @@ body {
   justify-content: center;
 }
 .btn-more .btn-inline,
-.btn-newslink .btn-inline,
 .btn-back .btn-inline {
   border-color: var(--color-accent);
   border: 3px solid var(--color-accent);
   color: var(--color-accent);
 }
 .btn-more .btn-inline:hover,
-.btn-newslink .btn-inline:hover,
 .btn-back .btn-inline:hover {
   background-color: var(--color-accent);
   border: 3px solid var(--color-accent);
@@ -791,8 +788,13 @@ body {
      object-fit: cover;
 }
 
-.article-nav {
-  padding: 1rem;
+.article-nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+.article-nav ul p {
+  color: var(--color-accent);
 }
 
 .article-news {
@@ -800,9 +802,15 @@ body {
   align-items: center;
   flex-direction: column;
   padding-left: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
 }
 .article-news h2 {
+  margin-bottom: 2rem;
+}
+
+.btn-newslink {
+  display: flex;
+  justify-content: center;
   margin-bottom: 2rem;
 }
 
