@@ -859,7 +859,7 @@ body {
 
 .contact-main .main-content {
   background-color: #fff;
-  background-image: linear-gradient(rgba(97, 11, 236, 0.3), rgba(11, 25, 155, 0.3)), url("/assets/images/Contact-Support.jpg");
+  background-image: linear-gradient(rgba(97, 11, 236, 0.3), rgba(11, 25, 155, 0.3)), url("../assets/images/Contact-Support.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0 25%;
@@ -898,7 +898,7 @@ body {
   padding: 3rem;
 }
 .contact-main .contact-info div * {
-  padding: 1rem;
+  padding: 0.8rem;
 }
 .contact-main .contact-info div i {
   color: var(--color-accent);
@@ -942,7 +942,7 @@ body {
 }
 .contact-main .card-contact-information div * {
   color: #fff;
-  padding: 1rem;
+  padding: 0.7rem;
 }
 .contact-main .card-contact-information div i {
   font-size: 2rem;
