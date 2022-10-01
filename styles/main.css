@@ -1286,6 +1286,7 @@ body {
 .services-gallery-container {
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: center;
 }
 
@@ -1295,7 +1296,7 @@ body {
   margin: 1%;
   width: 100%;
   height: auto;
-  transition: transform 0.5s;
+  transition: transform 0.3s;
 }
 
 .services-gallery:hover {
@@ -1324,11 +1325,18 @@ body {
     flex-direction: column;
   }
   .services-gallery {
+    margin: 0;
     margin-top: 2rem;
+    width: 90%;
+  }
+  .services-gallery:hover {
+    transform: scale(1.02);
   }
 }
 .services-cards-container {
   display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 2%;
 }
 
@@ -1354,6 +1362,10 @@ body {
   }
   .services-cards {
     margin-top: 2rem;
+    width: 90%;
+  }
+  .services-cards:hover {
+    transform: scale(1.03);
   }
 }
 .services-end {
