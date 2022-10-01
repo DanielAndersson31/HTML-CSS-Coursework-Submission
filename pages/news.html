@@ -47,7 +47,8 @@
   </header>
 
   <main class="news-main">
-    <div class="news-hero" alt="A big picture of a book written READ ME on it, next to it you can see a cup of coffe and a can with coffe in it. ">
+    <div class="news-hero"
+      alt="A big picture of a book written READ ME on it, next to it you can see a cup of coffe and a can with coffe in it. ">
       <section class="news-title">
         <h1>How to expand your viewport!</h1>
         <hr />
@@ -55,6 +56,15 @@
         <hr />
       </section>
     </div>
+
+    <div class="container news-search">
+      <form role="search" id="newsform">
+        <input type="text" id="newssearch" class="form-control" name="newssearch" placeholder="Search..."
+          aria-label="Search through site content">
+      </form>
+      <button type="search" class="btn btn-outline-dark">Search</button>
+    </div>
+
     <div class="container news-container">
       <div class="card news-card shadow">
         <a href="news-pages/article-release.html">
@@ -204,6 +214,21 @@
       </div>
     </div>
   </footer>
+
+  <!--Search script-->
+  <script>
+    const newsform = document.getElementById('newsform');
+    const newssearch = document.getElementById('newssearch');
+    const google = 'https://www.google.com/search?q=site%3A+';
+    const site = 'gbgwebdev.com';
+    function submitted(event) {
+      event.preventDefault();
+      const url = google + site + '+' + newssearch.value;
+      const win = window.open(url, '_blank');
+      win.focus();
+    }
+    newsform.addEventListener('submit', submitted);
+  </script>
 </body>
 
 </html>
