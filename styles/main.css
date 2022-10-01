@@ -1223,48 +1223,34 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
-  height: 30rem;
+  height: 40rem;
 }
 
-.services-cover-text {
-  color: white;
-  position: absolute;
-  top: 30%;
-  left: 20%;
-}
-
-.services-cover-text h3 {
-  margin-bottom: 1rem;
-}
-
-.services-cover-button {
-  margin-left: 1rem;
-}
-
-#services-h2 {
+.services-h2 {
   margin-top: 2%;
-  margin-left: 2%;
   margin-bottom: 2%;
 }
 
+.services-gallery-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 .services-gallery {
-  float: left;
-  width: 25%;
-  margin-bottom: 1%;
+  border: 1px solid rgb(190, 190, 190);
+  border-radius: 2%;
+  margin: 1%;
+  width: 100%;
+  height: auto;
   transition: transform 0.5s;
 }
 
-.services-gallery-content {
-  border: 1px solid rgb(190, 190, 190);
-  border-radius: 2%;
-  margin: 4%;
-}
-
-.services-gallery-content:hover {
+.services-gallery:hover {
   border: 1px solid black;
 }
 
-.services-gallery-content img {
+.services-gallery img {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 2%;
@@ -1274,16 +1260,19 @@ body {
 
 .services-gallery-desc {
   text-align: center;
-  padding: 2%;
+  padding: 4%;
 }
 
 .services-gallery:hover {
   transform: scale(1.05);
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 768px) {
+  .services-gallery-container {
+    flex-direction: column;
+  }
   .services-gallery {
-    width: 50%;
+    margin-top: 2rem;
   }
 }
 .services-cards-container {
@@ -1307,13 +1296,17 @@ body {
   transform: scale(1.05);
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 768px) {
   .services-cards-container {
     flex-direction: column;
+  }
+  .services-cards {
+    margin-top: 2rem;
   }
 }
 .services-end {
   position: relative;
+  margin-top: 3rem;
 }
 
 .services-end img {
@@ -1321,6 +1314,7 @@ body {
      object-fit: cover;
   width: 100%;
   height: 20rem;
+  box-shadow: 2px 2px 20px rgb(90, 90, 90);
 }
 
 .services-end-text h4 {
