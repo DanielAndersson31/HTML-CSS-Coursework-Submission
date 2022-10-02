@@ -97,19 +97,19 @@
 
 .news-card {
   border-radius: var(--border-radius);
-  width: var(--article-width);
+  max-width: var(--article-width);
   height: auto;
   overflow: hidden;
   padding: 0;
 
   .zoom {
-    width: var(--article-width);
+    max-width: var(--article-width);
     height: 17rem;
     overflow: hidden;
 
     img {
       border-radius: var(--border-radius);
-      width: var(--article-width);
+      max-width: var(--article-width);
       height: 17rem;
       transition: 1s all ease-in-out;
 
