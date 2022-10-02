@@ -913,6 +913,9 @@ body {
 .contact-main .support-item h4 {
   color: var(--color-accent);
 }
+.contact-main .contact-form {
+  padding: 1rem;
+}
 .contact-main .contact-form h2 {
   padding: 2rem;
   text-align: center;
