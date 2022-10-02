@@ -63,10 +63,14 @@
     color: var(--color-accent);
   }
 
-  .contact-form h2 {
-    padding: 2rem;
-    text-align: center;
+  .contact-form {
+    padding: 1rem;
+    h2 {
+      padding: 2rem;
+      text-align: center;
+    }
   }
+
   .card-contact-information {
     display: flex;
     flex-wrap: wrap;
