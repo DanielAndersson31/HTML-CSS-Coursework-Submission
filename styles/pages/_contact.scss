@@ -2,7 +2,7 @@
   .main-content {
     background-color: #fff;
     background-image: linear-gradient(rgba(97, 11, 236, 0.3), rgba(11, 25, 155, 0.3)),
-      url("/assets/images/Contact-Support.jpg");
+      url("../assets/images/Contact-Support.jpg");
 
     background-size: cover;
     background-repeat: no-repeat;
@@ -43,7 +43,7 @@
     div {
       padding: 3rem;
       * {
-        padding: 1rem;
+        padding: 0.8rem;
       }
       i {
         color: var(--color-accent);
@@ -63,10 +63,14 @@
     color: var(--color-accent);
   }
 
-  .contact-form h2 {
-    padding: 2rem;
-    text-align: center;
+  .contact-form {
+    padding: 1rem;
+    h2 {
+      padding: 2rem;
+      text-align: center;
+    }
   }
+
   .card-contact-information {
     display: flex;
     flex-wrap: wrap;
@@ -91,7 +95,7 @@
 
       * {
         color: #fff;
-        padding: 1rem;
+        padding: 0.7rem;
       }
       i {
         font-size: 2rem;

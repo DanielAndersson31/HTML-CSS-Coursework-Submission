@@ -859,7 +859,7 @@ body {
 
 .contact-main .main-content {
   background-color: #fff;
-  background-image: linear-gradient(rgba(97, 11, 236, 0.3), rgba(11, 25, 155, 0.3)), url("/assets/images/Contact-Support.jpg");
+  background-image: linear-gradient(rgba(97, 11, 236, 0.3), rgba(11, 25, 155, 0.3)), url("../assets/images/Contact-Support.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0 25%;
@@ -898,7 +898,7 @@ body {
   padding: 3rem;
 }
 .contact-main .contact-info div * {
-  padding: 1rem;
+  padding: 0.8rem;
 }
 .contact-main .contact-info div i {
   color: var(--color-accent);
@@ -912,6 +912,9 @@ body {
 .contact-main .sales-item h4,
 .contact-main .support-item h4 {
   color: var(--color-accent);
+}
+.contact-main .contact-form {
+  padding: 1rem;
 }
 .contact-main .contact-form h2 {
   padding: 2rem;
@@ -942,7 +945,7 @@ body {
 }
 .contact-main .card-contact-information div * {
   color: #fff;
-  padding: 1rem;
+  padding: 0.7rem;
 }
 .contact-main .card-contact-information div i {
   font-size: 2rem;
@@ -1261,48 +1264,48 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
-  height: 30rem;
+  height: 40rem;
 }
 
 .services-cover-text {
   color: white;
+  text-shadow: 3px 3px black;
   position: absolute;
-  top: 30%;
-  left: 20%;
+  top: 40%;
+  left: 45%;
+}
+@media only screen and (max-width: 768px) {
+  .services-cover-text {
+    top: 40%;
+    left: 30%;
+  }
 }
 
-.services-cover-text h3 {
-  margin-bottom: 1rem;
-}
-
-.services-cover-button {
-  margin-left: 1rem;
-}
-
-#services-h2 {
+.services-h2 {
   margin-top: 2%;
-  margin-left: 2%;
   margin-bottom: 2%;
 }
 
-.services-gallery {
-  float: left;
-  width: 25%;
-  margin-bottom: 1%;
-  transition: transform 0.5s;
+.services-gallery-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-.services-gallery-content {
+.services-gallery {
   border: 1px solid rgb(190, 190, 190);
   border-radius: 2%;
-  margin: 4%;
+  margin: 1%;
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s;
 }
 
-.services-gallery-content:hover {
+.services-gallery:hover {
   border: 1px solid black;
 }
 
-.services-gallery-content img {
+.services-gallery img {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 2%;
@@ -1312,20 +1315,31 @@ body {
 
 .services-gallery-desc {
   text-align: center;
-  padding: 2%;
+  padding: 4%;
 }
 
 .services-gallery:hover {
   transform: scale(1.05);
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 768px) {
+  .services-gallery-container {
+    flex-direction: column;
+    align-items: center;
+  }
   .services-gallery {
-    width: 50%;
+    margin: 0;
+    margin-top: 2rem;
+    width: 90%;
+  }
+  .services-gallery:hover {
+    transform: scale(1.02);
   }
 }
 .services-cards-container {
   display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 2%;
 }
 
@@ -1345,13 +1359,21 @@ body {
   transform: scale(1.05);
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 768px) {
   .services-cards-container {
     flex-direction: column;
+  }
+  .services-cards {
+    margin-top: 2rem;
+    width: 90%;
+  }
+  .services-cards:hover {
+    transform: scale(1.03);
   }
 }
 .services-end {
   position: relative;
+  margin-top: 3rem;
 }
 
 .services-end img {
@@ -1359,6 +1381,7 @@ body {
      object-fit: cover;
   width: 100%;
   height: 20rem;
+  box-shadow: 2px 2px 20px rgb(90, 90, 90);
 }
 
 .services-end-text h4 {
@@ -1372,5 +1395,5 @@ body {
 .services-end-text {
   position: absolute;
   bottom: 40%;
-  right: 15%;
+  right: 10%;
 }/*# sourceMappingURL=main.css.map */
